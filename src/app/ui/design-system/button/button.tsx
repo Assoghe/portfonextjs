@@ -88,7 +88,15 @@ export const Button = ({
             type="button"
             className={clsx(variantStyles,sizeStyles, icoSize, "")}
             disabled = {disabled}
-            >            {icon && variant === "ico" ? (<icon.icon size={icoSize}/>) : <>{children}</>}            
+            >            {icon && variant === "ico" ? (<icon.icon size={icoSize}/>) : 
+            (
+                <div className={clsx(icon && "flex items-center gap-1" )}> {icon && iconPosition === "left" && (
+                    <icon.icon size={icoSize}/>
+                )}         {children}
+                    {icon && iconPosition === "right" && (
+                        <icon.icon size={icoSize}/>
+            )}
+            </div>) }            
             </button>
         </>
     )

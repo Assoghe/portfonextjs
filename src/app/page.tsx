@@ -7,7 +7,7 @@ const Home = () => {
     <>
     <Button variant="accent" size="small"> Test </Button>
     <Button variant="outline" size="medium"> Test </Button>
-    <Button variant="label"> Test </Button>
+    <Button icon={{icon: HiFire}} iconPosition="left"> Test </Button>
     <Button variant="action"> Test </Button>
     <Button variant="disabled"> Test </Button>
     <Button variant="ico" iconTheme="neutral" icon={{ icon: HiFire
