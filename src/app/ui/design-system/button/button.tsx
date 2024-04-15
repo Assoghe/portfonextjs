@@ -1,4 +1,4 @@
-import { IconProps } from "@/types/iconProps";
+import { IconProps } from "@/app/types/iconProps";
 import clsx from "clsx";
 
 interface Props {
