@@ -27,41 +27,46 @@ export const Button = ({
 
     switch (variant) {
         case "accent":
-            variantStyles = "text-sm bg-primary hover:bg-neutral-50 text-neutral-950 rounded";
+            variantStyles = "text-base bg-primary hover:bg-neutral-50 text-neutral-950 rounded-md";
             break;
 
         case "outline":
-            variantStyles = "text-sm border border-primary text-primary hover:border border-neutral-50 text-neutral-50 rounded";
+            variantStyles = "text-base border border-primary text-primary hover:border border-neutral-50 text-neutral-50 rounded-md";
             break;
 
         case "label":
-            variantStyles = "text-sm text-primary hover:text-neutral-50";
+            variantStyles = "text-base text-primary hover:text-neutral-50 rounded-md";
             break;
 
         case "action":
-            variantStyles = "text-sm bg-primary-700 hover:bg-neutral-50 text-neutral-950 rounded";
+            variantStyles = "text-base bg-primary-700 hover:bg-neutral-50 text-neutral-950 rounded-md";
             break;
         
         case "disabled":
-            variantStyles = "text-sm bg-primary-300 text-neutral-950";
+            variantStyles = "text-base bg-primary-300 text-neutral-950 rounded-md";
             break;
 
         case "ico":
-            variantStyles = "";
+            if (iconTheme === "accent") {
+                variantStyles = "text-neutral-900";
+            }
+            if (iconTheme === "neutral") {
+                variantStyles = "text-neutral hover:text-primary";
+            }
             break;
     }
 
     switch (size) {
         case "small":
-            sizeStyles = "";
+            sizeStyles = "text-sm px-2 py-1 ";
             break;
 
         case "medium":
-            sizeStyles = "";
+            sizeStyles = "text-base px-6 py-3";
             break;
 
         case "large":
-            sizeStyles = "";
+            sizeStyles = "text-lg px-9 py-6";
             break;
     }
 
@@ -71,9 +76,10 @@ export const Button = ({
         <>
             <button 
             type="button"
-            className={clsx(variantStyles, icoSize, "")}
+            className={clsx(variantStyles,sizeStyles, icoSize, "")}
             disabled = {disabled}
             > {children}</button>
+            {icon && variant === "ico" ? <></> : <>{children}</>}
         </>
     )
 }
