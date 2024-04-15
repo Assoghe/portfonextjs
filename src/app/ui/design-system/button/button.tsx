@@ -1,9 +1,10 @@
+import { IconProps } from "@/types/iconProps";
 import clsx from "clsx";
 
 interface Props {
     size?: "small" | "medium" | "large";
     variant?: "accent" | "outline" | "label" | "action" | "disabled" | "ico";
-    icon?: {icon: React.ElementType};
+    icon?: IconProps;
     iconTheme?: "accent" | "neutral";
     iconPosition?: "left" | "right";
     disabled?: boolean;
