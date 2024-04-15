@@ -4,3 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 
+@layer base {
+    html {
+        font-family: unbounded, system-ui, sans-serif;
+    }
+}

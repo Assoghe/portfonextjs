@@ -7,10 +7,16 @@ const Home = () => {
       Test
     </Typography>
 
-    <Typography variant="h2">
+    <Typography variant="h3">
       Test
     </Typography>
+
+    <Typography variant="h4">
+      Test
+    </Typography>
+    
     </>
+    
     
   )
 }

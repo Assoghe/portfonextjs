@@ -20,38 +20,37 @@ export const Typography = ({
     let variantStyles: string = "";
 
     switch (variant) {
+        case "h1": 
+        variantStyles = "text-5xl";
+        break;
 
-        case "h1":
-            variantStyles= "text-blue-200";
-            break;
+        case "h2": 
+        variantStyles = "text-4xl";
+        break;
 
-        case "h2":
-            variantStyles= "text-red-400";
-            break;
-        
-        case "h3":
-            variantStyles= "";
-            break;
+        case "h3": 
+        variantStyles = "text-3xl";
+        break;
 
-        case "h4":
-            variantStyles= "";
-            break;
-    
-        case "h5":
-            variantStyles= "";
-            break;
-            
-        case "h6":
-            variantStyles= "";
-            break;
+        case "h4": 
+        variantStyles = "text-2xl";
+        break;
 
-        case "body-one":
-            variantStyles= "";
-            break;
-        
-        case "body-two":
-            variantStyles= "";
-            break;    
+        case "h5": 
+        variantStyles = "text-xl";
+        break;
+
+        case "h6": 
+        variantStyles = "text-lg";
+        break;
+
+        case "body-one": 
+        variantStyles = "text-base";
+        break;
+
+        case "body-two": 
+        variantStyles = "text-sm";
+        break;
     }
 
 
