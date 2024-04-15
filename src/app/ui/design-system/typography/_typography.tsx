@@ -3,7 +3,7 @@ import clsx from "clsx";
 interface Props {
     variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body-one" | "body-two";
     component?: "h1" | "h2"| "h3" | "h4" | "h5" | "h6" | "p" | "span"; 
-    theme?: "neutral" | "primary"| "secondary";
+    theme?: "neutral" | "primary";
     weight?: "light" | "regular"| "medium" | "semi-bold"| "bold";
     className?: string; 
     children: React.ReactNode;
@@ -17,7 +17,7 @@ export const Typography = ({
     className,
     children}:Props) => {
 
-    let variantStyles: string = "";
+    let variantStyles: string = "", colorStyles: string = "";
 
     switch (variant) {
         case "h1": 
@@ -53,9 +53,19 @@ export const Typography = ({
         break;
     }
 
+    switch (theme) {
+        case "neutral": 
+        colorStyles = "text-neutral";
+        break;
+
+        case "primary": 
+        colorStyles = "text-primary";
+        break;
+    }
+
 
     return (
-        <Component className={clsx(variantStyles, className)}>
+        <Component className={clsx(variantStyles, colorStyles, className)}>
             {children}
         </Component>
     )

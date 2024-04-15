@@ -7,7 +7,7 @@ const Home = () => {
       Test
     </Typography>
 
-    <Typography variant="h3">
+    <Typography variant="body-one">
       Test
     </Typography>
 
