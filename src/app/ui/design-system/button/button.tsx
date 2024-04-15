@@ -48,7 +48,7 @@ export const Button = ({
 
         case "ico":
             if (iconTheme === "accent") {
-                variantStyles = "text-neutral-900";
+                variantStyles = "text-primary";
             }
             if (iconTheme === "neutral") {
                 variantStyles = "text-neutral hover:text-primary";
@@ -78,8 +78,8 @@ export const Button = ({
             type="button"
             className={clsx(variantStyles,sizeStyles, icoSize, "")}
             disabled = {disabled}
-            > {children}</button>
-            {icon && variant === "ico" ? <></> : <>{children}</>}
+            >            {icon && variant === "ico" ? (<icon.icon/>) : <>{children}</>}            
+            </button>
         </>
     )
 }
