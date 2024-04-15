@@ -1,8 +1,17 @@
+import { Typography } from "./ui/design-system/typography/_typography"
+
 const Home = () => {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <>
+    <Typography variant="h1">
+      Test
+    </Typography>
+
+    <Typography variant="h2">
+      Test
+    </Typography>
+    </>
+    
   )
 }
 
