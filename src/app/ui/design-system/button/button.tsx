@@ -3,7 +3,7 @@ import clsx from "clsx";
 interface Props {
     size?: "small" | "medium" | "large";
     variant?: "accent" | "outline" | "label" | "action" | "disabled" | "ico";
-    icon?: any;
+    icon?: {icon: React.ElementType};
     iconTheme?: "accent" | "neutral";
     iconPosition?: "left" | "right";
     disabled?: boolean;
@@ -58,15 +58,24 @@ export const Button = ({
 
     switch (size) {
         case "small":
-            sizeStyles = "text-sm px-2 py-1 ";
+            sizeStyles = `text-sm  ${
+                variant === "ico" ? "flex items-center justify-center w-[20px] h-[20px]" : "px-2 py-1"
+            }`;
+            icoSize = 20;
             break;
 
         case "medium":
-            sizeStyles = "text-base px-6 py-3";
+            sizeStyles = `text-base ${
+                variant === "ico" ? "flex items-center justify-center w-[24px] h-[24px]" : "px-6 py-3"
+            }`; ;
+            icoSize = 24;
             break;
 
         case "large":
-            sizeStyles = "text-lg px-9 py-6";
+            sizeStyles = `text-lg ${
+                variant === "ico" ? "flex items-center justify-center w-[60px] h-[60px]" : "px-9 py-6"
+            }`;
+            icoSize = 60;
             break;
     }
 
@@ -78,7 +87,7 @@ export const Button = ({
             type="button"
             className={clsx(variantStyles,sizeStyles, icoSize, "")}
             disabled = {disabled}
-            >            {icon && variant === "ico" ? (<icon.icon/>) : <>{children}</>}            
+            >            {icon && variant === "ico" ? (<icon.icon size={icoSize}/>) : <>{children}</>}            
             </button>
         </>
     )
