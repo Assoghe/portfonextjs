@@ -1,5 +1,6 @@
-import { IconProps } from "@/app/types/iconProps";
+import React from "react";
 import clsx from "clsx";
+import { IconProps } from "../../../types/iconProps";
 
 interface Props {
     size?: "small" | "medium" | "large";
