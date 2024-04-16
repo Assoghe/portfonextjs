@@ -87,7 +87,7 @@ export const Button = ({
         <>
             <button 
             type="button"
-            className={clsx(variantStyles,sizeStyles, icoSize, "")}
+            className={clsx(variantStyles,sizeStyles, icoSize, "animate")}
             disabled = {disabled}
             >            {icon && variant === "ico" ? (<icon.icon size={icoSize}/>) : 
             (
