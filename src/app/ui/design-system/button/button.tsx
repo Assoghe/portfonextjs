@@ -1,8 +1,8 @@
 import React from "react";
 import clsx from "clsx";
 import { IconProps } from "../../../types/iconProps";
-import { LinkType, LinkTypes } from "@/app/lib/link-type";
 import Link from "next/link";
+import { LinkType, LinkTypes } from "../../../lib/link-type";
 
 interface Props {
     size?: "small" | "medium" | "large";

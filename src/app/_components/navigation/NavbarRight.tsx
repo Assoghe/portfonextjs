@@ -1,9 +1,9 @@
-import { Typography } from '@/app/ui/design-system/typography/typography'
 import Link from 'next/link'
 import React from 'react'
 import { usePathname } from "next/navigation"
 import { FaBars } from 'react-icons/fa'
 import { IoClose } from 'react-icons/io5'
+import { Typography } from '../../ui/design-system/typography/typography'
 
 
 function NavbarRight() {
