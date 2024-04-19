@@ -1,8 +1,10 @@
+import React from "react";
 import clsx from "clsx";
+
 
 interface Props {
     variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body-one" | "body-two";
-    component?: "h1" | "h2"| "h3" | "h4" | "h5" | "h6" | "p" | "span"; 
+    component?: "h1" | "h2"| "h3" | "h4" | "h5" | "h6" | "p" | "span" | "div"; 
     theme?: "neutral" | "primary";
     weight?: "light" | "regular"| "medium" | "semi-bold"| "bold";
     className?: string; 

@@ -29,7 +29,7 @@ const config: Config = {
       '2xl': ['1.125rem', {
         lineHeight: '2.7rem',
         letterSpacing: '0.045rem',
-        fontWeight: '500',
+        fontWeight: '400',
       }],
       '3xl': ['1.3125rem', {
         lineHeight: '2.7rem',
