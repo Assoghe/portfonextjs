@@ -1,7 +1,6 @@
 function PortfolioPage() {
   return (
     <div>
-      Portfolio
     </div>
   )
 }

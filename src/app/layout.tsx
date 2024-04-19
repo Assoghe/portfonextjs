@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Unbounded } from "next/font/google";
 import "./globals.css";
-import { Navigation } from "./_components/navigation/navigation";
+import Navigation  from "./_components/navigation/navigation";
 
 const unbounded = Unbounded({ subsets: ["latin"] });
 
@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+            <Navigation/>
       <body className={unbounded.className}>
-      <Navigation/>
         {children}
         </body>
     </html>

@@ -1,16 +1,22 @@
 import React from "react";
 import clsx from "clsx";
 import { IconProps } from "../../../types/iconProps";
+import { LinkType, LinkTypes } from "@/app/lib/link-type";
+import Link from "next/link";
 
 interface Props {
     size?: "small" | "medium" | "large";
     variant?: "accent" | "outline" | "label" | "action" | "disabled" | "ico";
     icon?: IconProps;
+    iconCondition?: any;
     iconTheme?: "accent" | "neutral";
     iconPosition?: "left" | "right";
     disabled?: boolean;
     isLoading?: boolean;
     children?: React.ReactNode;
+    action?: Function;
+    baseUrl?: string;
+    linkType?: LinkType;
 }
 
 export const Button = ({
@@ -22,6 +28,9 @@ export const Button = ({
     disabled,
     isLoading,
     children,
+    baseUrl,
+    linkType,
+    action = () => {},
 
 }: Props) => {
 
@@ -81,15 +90,15 @@ export const Button = ({
             break;
     }
 
+const handleClick = () => {
+    if (action) {
+        action()
+    }
+}
 
-
-    return(
-        <>
-            <button 
-            type="button"
-            className={clsx(variantStyles,sizeStyles, icoSize, "animate")}
-            disabled = {disabled}
-            >            {icon && variant === "ico" ? (<icon.icon size={icoSize}/>) : 
+const buttonContent = (
+    <>
+          {icon && variant === "ico" ? (<icon.icon size={icoSize}/>) : 
             (
                 <div className={clsx(icon && "flex items-center gap-1" )}> {icon && iconPosition === "left" && (
                     <icon.icon size={icoSize}/>
@@ -97,8 +106,33 @@ export const Button = ({
                     {icon && iconPosition === "right" && (
                         <icon.icon size={icoSize}/>
             )}
-            </div>) }            
-            </button>
-        </>
-    )
+            </div>) 
+            }           
+    </>
+)
+
+const buttonElement = (
+    <button 
+    type="button"
+    className={clsx(variantStyles,sizeStyles, icoSize, "animate")}
+    onClick={handleClick}
+    disabled = {disabled}
+    >            
+        {buttonContent}
+    </button>
+)
+
+    if (baseUrl) {
+        if(linkType === LinkTypes.EXTERNAL) {
+            return (
+                <a href={baseUrl} target="_blank">
+                    {buttonElement}
+                </a>
+            )
+        } else {
+            return <Link href={baseUrl}>{buttonElement}</Link>
+        }
+    }
+
+    return buttonElement
 }

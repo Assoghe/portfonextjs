@@ -1,71 +1,49 @@
 'use client'
 
-import React from "react"
-import { Container } from "../../ui/container/container"
-import { Logo } from "../../ui/design-system/logo/logo"
-import { Typography } from "../../ui/design-system/typography/typography"
-import { Button } from "../../ui/design-system/button/button"
-import { HiMail } from "react-icons/hi";
-import { FaGithub, FaBehance, FaLinkedin } from "react-icons/fa";
-import Link from "next/link"
-import { usePathname } from "next/navigation"
+import React, { useState } from "react";
+import { Container } from "../../ui/container/container";
+import LogoComponent from "./LogoComponent";
+import NavbarRight from "./NavbarRight";
+import SocialNetwork from "./SocialNetwork";
+import { Button } from "@/app/ui/design-system/button/button";
+import { HiBars3, HiMiniXMark } from "react-icons/hi2";
 
-interface Props {
+const Navigation = () => {
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
-}
-
-export const Navigation = ({}: Props) => {
-
-  const pathname = usePathname()
+  const toggleNavbar = () => {
+    setNavbarOpen(!navbarOpen);
+  };
 
   return (
-    <div className="border-b-1 border-neutral-700 bg-neutral-950">
-        <Container className="flex items-center justify-between px-64 py-3 gap-12">
-          <Link href="/">
-            <div>
-              <Logo size="little"/>
-            </div>
-          </Link>
-          <div className="flex items-center gap-7">
-            <Typography variant="h4" component="div" className="flex items-center gap-7">
-                <Link  className={`link ${pathname === '/' ? 'active text-primary' : ''}`} href="/"> Portfolio </Link>
-                <Link className={`link ${pathname === '/a-propos' ? 'active text-primary'  : ''}`} href="/a-propos"> A propos </Link>
-                <Link className={`link ${pathname === '/livreblanc' ? 'active text-primary' : ''}`} href="/livreblanc">Livre blanc </Link>
-                <Link className={`link ${pathname === '/contact' ? 'active text-primary' : ''}`} href="/contact"> Contact </Link>
-            </Typography>
-
-            <div className="flex items-center gap-5">
-              <Button
-                icon={{icon: FaGithub}}
-                iconTheme="neutral"
-                size="medium"
-                variant="ico"
-              />
-
-              <Button
-                icon={{icon: FaBehance}}
-                iconTheme="neutral"
-                size="medium"
-                variant="ico"
-              />
-
-              <Button
-                icon={{icon: FaLinkedin}}
-                iconTheme="neutral"
-                size="medium"
-                variant="ico"
-              />
-
-              <Button
-                icon={{icon: HiMail}}
-                iconTheme="neutral"
-                size="medium"
-                variant="ico"
-              />
-            </div>
-
+    <div className="border-b-1 border-neutral-700 bg-neutral-950 w-full fixed z-10">
+      <Container className="px-16 py-3 flex items-center justify-between relative xl:px-64">
+        <LogoComponent />
+          <div className="hidden items-left gap-7 lg:flex">
+            <NavbarRight/>
+            <SocialNetwork/>
           </div>
-        </Container>
+        
+
+
+        <div className="lg:hidden flex gap-7 items-left">
+          <Button
+            action={toggleNavbar}
+            size="medium"
+            variant="ico"
+          >
+            {navbarOpen ? <HiMiniXMark /> : <HiBars3 />}
+          </Button>
+        </div>
+        <div className={`items-left gap-7 ${navbarOpen ? 'block' : 'hidden'} absolute inset-x-0 top-full bg-black bg-opacity-90`}>
+          <div className=" bg-primary-800 block flex-col xl:hidden xl:bg-transparent px-16 h-screen align-sub-center">
+            <NavbarRight />
+            <SocialNetwork />
+          </div>
+        </div>
+      </Container>
     </div>
-  )
-}
+  );
+};
+
+export default Navigation;
