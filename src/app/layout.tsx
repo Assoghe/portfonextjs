@@ -18,7 +18,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-            <Navigation/>
       <body className={unbounded.className}>
         {children}
         </body>

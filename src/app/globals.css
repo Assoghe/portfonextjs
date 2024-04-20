@@ -7,6 +7,7 @@
 @layer base {
     html {
         font-family: unbounded, system-ui, sans-serif;
+        background-color: #18181B;
     }
 }
 

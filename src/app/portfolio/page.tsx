@@ -1,8 +1,8 @@
+import { HeroTopView } from "./_components/hero-top-view";
+
 function PortfolioPage() {
   return (
-    <div>
-      <p>Portfolio</p>
-    </div>
+      <HeroTopView/>
   )
 }
 

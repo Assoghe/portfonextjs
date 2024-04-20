@@ -16,7 +16,7 @@ const Navigation = () => {
   };
 
   return (
-    <div className="border-b-1 border-neutral-700 bg-neutral-950 w-full fixed z-10">
+    <div className="border-b-1 border-neutral-700 bg-neutral-950 w-full z-10 relative">
       <Container className="px-16 py-3 flex items-center justify-between relative xl:px-64">
         <LogoComponent />
           <div className="hidden items-left gap-7 lg:flex">
