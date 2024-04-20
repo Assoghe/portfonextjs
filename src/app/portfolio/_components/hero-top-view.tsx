@@ -1,12 +1,16 @@
 import { Container } from "@/app/ui/container/container";
 import { Typography } from "@/app/ui/design-system/typography/typography";
+import { Tag } from "@/app/ui/tag/tag";
 
 export const HeroTopView = () => {
     return (
-        <Container className="pt-90 h-full text-center items-center">
-            <Typography variant="h1" component="h1">
+        <Container className="px-16  my-40	xl:my-72 xl:px-64 ">
+            <Typography variant="h1" component="h1" className="my-14">
             Je suis une UX et Ui designer qui explore l’intégration pour créer des interfaces réalistes.
-                </Typography>
+            </Typography>
+            <Tag variant="default">
+                Disponible à partir d'octobre 2024
+            </Tag>
         </Container>
     )
 }
