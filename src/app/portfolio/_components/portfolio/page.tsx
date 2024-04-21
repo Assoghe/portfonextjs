@@ -1,4 +1,4 @@
-import { HeroTopView } from "./_components/hero-top-view";
+import { HeroTopView } from "../herosection/hero-top-view";
 
 function PortfolioPage() {
   return (
