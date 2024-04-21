@@ -5,6 +5,11 @@ const config: Config = {
   "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      mobile: "490px",
+      tablet: "1040px",
+      desktop: "1620px",
+    },
     fontSize: {
       'sm': ['0.9375rem', {
         lineHeight: '1.8rem',
