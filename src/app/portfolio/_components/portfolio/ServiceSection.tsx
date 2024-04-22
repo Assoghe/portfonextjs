@@ -20,7 +20,7 @@ export default function ServicesSection() {
         <Tag variant="outline"> Autonomie </Tag>
       </div>
 </div>
-<div className='grid grid-cols-4 gap-4 w-auto'>
+<div className='grid grid-cols-1 gap-4 w-auto tablet:grid-cols-2 desktop:grid-cols-4'>
         {service.map(({ title, content }) => (
           <BlocColor key={title} theme='primary' title={title} content={content} />
         ))}
