@@ -1,3 +1,4 @@
+import ContactPage from "@/app/contact/page";
 import { HeroTopView } from "../herosection/hero-top-view";
 import PortfolioSection from "./PortfolioPage";
 import ServicesSection from "./ServiceSection";
@@ -9,6 +10,7 @@ function PortfolioPage() {
       <HeroTopView/>
       <PortfolioSection/>
       <ServicesSection/>
+      <ContactPage/>
       </div>
     )
 }

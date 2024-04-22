@@ -32,7 +32,7 @@ export const LogoComponent = ({
 
   return (
     <div className='{`w-${logoWidth} h-auto`}'>
-    <Image src="/assets/img/logo.svg" width={logoSize} height= {logoSize} alt='logo' />
+    <Image src="/assets/img/logo.svg" sizes={size} width={logoSize} height= {logoSize} alt='logo' />
     </div>
   );
 };
