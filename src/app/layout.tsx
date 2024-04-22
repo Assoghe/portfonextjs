@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Unbounded } from "next/font/google";
 import "./globals.css";
 import Navbar from "./_components/navigation/navbar";
+import { Footer } from "./_components/footer/page";
 
 const unbounded = Unbounded({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body className={unbounded.className}>
         <Navbar/>
         {children}
+        <Footer/>
         </body>
     </html>
   );
