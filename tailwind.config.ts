@@ -41,7 +41,7 @@ const config: Config = {
         letterSpacing: '0.105rem',
         fontWeight: '400',
       }],
-      '4xl': ['2.25rem', {
+      '4xl': ['2.10rem', {
         lineHeight: '3.6rem',
         letterSpacing: '0.18rem',
         fontWeight: '400',
