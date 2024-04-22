@@ -1,4 +1,4 @@
-import { IconProps } from "../../../types/iconProps";
+import { IconProps } from "@/app/types/iconProps";
 import clsx from "clsx";
 
 interface Props {
@@ -23,7 +23,7 @@ export const Tag = ({
             break;
 
         case "outline":
-            variantStyle = "w-fit px-6 py-3 text-neutral-50 rounded rounded-full";
+            variantStyle = "w-fit px-6 py-3 text-neutral-100 border border-neutral-500 rounded rounded-full";
             break; 
     }
 

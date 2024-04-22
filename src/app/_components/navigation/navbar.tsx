@@ -11,7 +11,7 @@ import { Button } from '@/app/ui/design-system/button/button'
 
 const Navbar = () => {
   return (
-    <header className='flex items-center justify-between h-20 max-width border-b border-neutral-800 px-12 tablet:px-56'>
+    <header className='flex items-center justify-between h-20 max-width border-b border-neutral-800 px-12 tablet:px-52'>
       <Link href={"/"}>
         <LogoComponent/>
       </Link>

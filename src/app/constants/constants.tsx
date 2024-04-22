@@ -51,7 +51,7 @@ export const navLinks = [
     {
         name: "Mangas'Fan",
         description: "Site d'actualité mangas et animés",
-        image: "/assets/img/mangafanui.png",
+        image: "/assets/img/mangasfan.webp",
         id: 1,
             case: {
                     descriptionName: "Mangas'Fan",
@@ -94,7 +94,7 @@ export const navLinks = [
     {
         name: "Tattoomorrow",
         description: "Application de gestion pour les tatoueurs",
-        image: "/assets/img/usecase/tattoo/cover-tattoo.png",
+        image: "/assets/img/tattoomorrow.webp",
         id: 2,
             case: {
                     descriptionName: "Tattoomorrow",
@@ -138,7 +138,7 @@ export const navLinks = [
             name: "Good Family",
             id: 3,
             description: "Application de gestion de budget familiale en utilisant la gamification",
-            image: "/assets/img/usecase/good/cover-good.png",
+            image: "/assets/img/goodfamily.webp",
                 case: {
                         descriptionName: "Good Family",
                         descriptionText: "Application de gestion de budget familiale en utilisant la gamification",
@@ -176,4 +176,48 @@ export const navLinks = [
                         footerImg: "../src/assets/img/usecase/good/footer-good.png"
             }
         },
+  ]
+
+  export const service = [
+    {
+      title: <> User <br/> Experience </>,
+      content: <>
+        Interview utilisateur <br/>
+        Persona <br/>
+        User journey <br/>
+        Brainstorming <br/>
+        User stories <br/>
+        Atelier co-conception
+      </>
+    },
+
+    {
+      title: <>User <br/> Interface</>,
+      content: <>
+        Maquette High fidelity <br/>
+        Design system
+      </>
+    },
+
+    {
+      title: <> Integration  <br/>web</>,
+      content: <>
+        HTML <br/>
+        CSS <br/>
+        Javascript <br/>
+        Typescript - débute <br/>
+        React JS - débute <br/>
+        TailwindCss - débute
+      </>
+    },
+
+    {
+      title: <> Design <br/> graphique </>,
+      content: <>
+        Création d’identité visuelle <br/>
+        Retouche photo <br/>
+        Mise en page print <br/>
+        Motion-design - débute <br/>
+      </>
+    }
   ]
