@@ -1,11 +1,11 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
-import LogoComponent from './LogoComponent'
 import { navLinks, socialLinks } from '@/app/constants/constants'
 import NavLink from './NavLink'
 import MobileMenu from './MobileMenu'
 import { Button } from '@/app/ui/design-system/button/button'
+import { LogoComponent } from './LogoComponent'
 
 
 
@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <header className='flex items-center justify-between h-20 max-width border-b border-neutral-800 px-12 tablet:px-52'>
       <Link href={"/"}>
-        <LogoComponent/>
+          <LogoComponent size='little'/>
       </Link>
 
     <nav className='flex items-center gap-12 max-tablet:hidden'>

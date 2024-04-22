@@ -1,6 +1,5 @@
 import { service } from '@/app/constants/constants'
 import { BlocColor } from '@/app/ui/bloc-color/bloc-color'
-import Divider from '@/app/ui/design-system/divider/divider'
 import { Typography } from '@/app/ui/design-system/typography/typography'
 import { Tag } from '@/app/ui/tag/tag'
 import React from 'react'
