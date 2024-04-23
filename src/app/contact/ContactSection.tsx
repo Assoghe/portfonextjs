@@ -9,7 +9,7 @@ const ContactSection = () => {
   return (
     <div className='flex items-center  flex-col my-56'>
       <LogoComponent size="bigger" />
-        <Typography variant='h2' component='h2' className='my-36'>
+        <Typography variant='h2' component='h2' className='my-36 text-center'>
             Intéressée par mon profil ? N’hésitez pas à me contacter ! 
         </Typography>
 
