@@ -4,16 +4,18 @@ import { Typography } from "../design-system/typography/typography";
 import Divider from "../design-system/divider/divider";
 
 interface Props {
-    title?: string;
+    title?: any;
     content?: ReactNode;
     theme?: "primary" | "secondary";
     className?: string;
+    key?: any;
 }
 
 export const BlocColor = ({
     theme = "primary",
     content,
     title,
+    key,
 }:Props) => {
     let themeStyle: string = ""; 
 
@@ -28,7 +30,7 @@ export const BlocColor = ({
     }
 
     return (
-        <div className={clsx(themeStyle)}>
+        <div className={clsx(themeStyle)} key={key}>
             {title && (
                 <Typography variant='h4' component='h4' className='text-neutral-950 mb-4'>
                     {title}

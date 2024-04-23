@@ -19,8 +19,8 @@ const Navbar = () => {
     <nav className='flex items-center gap-12 max-tablet:hidden'>
         <ul className='flex items-center gap-8'>
             {
-                navLinks.map((link, index)=>(
-                    <li key={index}>
+                navLinks.map((link)=>(
+                    <li>
                         <NavLink href={link.url} label={link.label}/>
                     </li>
                 ))
