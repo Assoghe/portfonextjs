@@ -7,8 +7,6 @@ import PortfolioPage from "./portfolio/_components/portfolio/page";
 const Home = () => {
   return (<>
       <PortfolioPage/>
-       <Container className="px-64 py-3">
-        </Container>
           </>
     
     

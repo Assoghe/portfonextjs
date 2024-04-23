@@ -17,6 +17,7 @@ const ContactSection = () => {
         {
                 socialLinks.map((icon, index)=>(
                     <Button
+                    key={index}
                     icon={icon}
                     iconTheme="neutral"
                     size="medium"

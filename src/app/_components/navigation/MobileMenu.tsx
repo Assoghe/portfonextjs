@@ -40,8 +40,8 @@ const toggleMenu = () => {
             <nav className='flex flex-col items-center justify-center flex-1 gap-10'>
         <ul className='flex items-center flex-col gap-5'>
             {
-                navLinks.map((link)=>(
-                    <li>
+                navLinks.map((link, index)=>(
+                    <li key={index}>
                         <NavLink href={link.url} label={link.label} className='text-3xl'/>
                     </li>
                 ))
@@ -50,6 +50,7 @@ const toggleMenu = () => {
             {
                 socialLinks.map((icon, index)=>(
                     <Button
+                    key={index}
                     icon={icon}
                     iconTheme="neutral"
                     size="medium"
