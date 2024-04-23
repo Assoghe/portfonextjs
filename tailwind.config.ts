@@ -79,6 +79,18 @@ const config: Config = {
         800: "#933135",
         900: "#7A1D29",
       },
+
+      secondary: {
+        100: "#FFE3ED",
+        200: "#FFC7E0",
+        300: "#FFABD9",
+        400: "#FF95DA",
+        DEFAULT: "#FF73DC",
+        600: "#DB54C6",
+        700: "#B739B0",
+        800: "#8F2493",
+        900: "#6C167A",
+      },
     },
 
     extend: {
