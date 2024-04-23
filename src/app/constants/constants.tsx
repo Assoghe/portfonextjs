@@ -24,20 +24,21 @@ export const navLinks = [
   export const socialLinks = [
     {
       id: 1,
+      label: "Github",
       icon: FaGithub,
-      url: "#",
+      url: "https://github.com/Assoghe",
     },
     {
       id: 2,
       label: "Behance",
       icon: FaBehance,
-      url: "#",
+      url: "https://www.behance.net/sorayagherras1",
     },
     {
       id: 3,
-      label: "Twitter",
+      label: "Linkedin",
       icon: FaLinkedin,
-      url: "#",
+      url: "https://www.linkedin.com/in/soraya-gherras/",
     },
     {
         id: 4,
