@@ -6,8 +6,8 @@ import { BsMenuApp } from 'react-icons/bs'
 import NavLink from './NavLink'
 import { PiPhone } from 'react-icons/pi'
 import { navLinks, socialLinks } from '@/app/constants/constants'
-import LogoComponent from './LogoComponent'
 import { Button } from '@/app/ui/design-system/button/button'
+import { LogoComponent } from './LogoComponent';
 
 
 const MobileMenu = () => {
@@ -30,7 +30,7 @@ const toggleMenu = () => {
 
         <div className='flex w-full items-center justify-between h-20 max-width border-b bg-neutral-950'>
         <Link href={"/"}> 
-            <LogoComponent/>
+            <LogoComponent size='little'/>
       </Link>
       <button className="text-neutral-100 hover:text-primary transition-colors text-4xl" onClick={toggleMenu}>
     <HiMiniXMark />

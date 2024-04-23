@@ -16,7 +16,7 @@ const config: Config = {
         letterSpacing: '0.02813rem',
         fontWeight: '300',
       }],
-      'base': ['1.125rem', {
+      'base': ['1rem', {
         lineHeight: '1.8rem',
         letterSpacing: '0.03375rem',
         fontWeight: '300',
@@ -41,12 +41,12 @@ const config: Config = {
         letterSpacing: '0.105rem',
         fontWeight: '400',
       }],
-      '4xl': ['2.25rem', {
+      '4xl': ['1.8rem', {
         lineHeight: '3.6rem',
         letterSpacing: '0.18rem',
         fontWeight: '400',
       }],
-      '5xl': ['2.5rem', {
+      '5xl': ['2.3rem', {
         lineHeight: '4.5rem',
         letterSpacing: '0.1rem',
         fontWeight: '400',
@@ -78,6 +78,18 @@ const config: Config = {
         700: "#B7504D",
         800: "#933135",
         900: "#7A1D29",
+      },
+
+      secondary: {
+        100: "#FFE3ED",
+        200: "#FFC7E0",
+        300: "#FFABD9",
+        400: "#FF95DA",
+        DEFAULT: "#FF73DC",
+        600: "#DB54C6",
+        700: "#B739B0",
+        800: "#8F2493",
+        900: "#6C167A",
       },
     },
 

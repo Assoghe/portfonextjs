@@ -1,7 +1,9 @@
+import ContactSection from "./ContactSection";
+
 function ContactPage() {
   return (
     <div>
-      Contact
+      <ContactSection/>
     </div>
   )
 }
