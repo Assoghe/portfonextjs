@@ -1,6 +1,6 @@
-import { Typography } from '@/app/ui/design-system/typography/typography';
 import React from 'react';
 import { IconType } from 'react-icons';
+import { Typography } from '../../ui/design-system/typography/typography';
 
 interface IconProps {
   icon: IconType;

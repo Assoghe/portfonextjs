@@ -5,9 +5,9 @@ import { HiBars3, HiMiniXMark } from "react-icons/hi2";
 import { BsMenuApp } from 'react-icons/bs'
 import NavLink from './NavLink'
 import { PiPhone } from 'react-icons/pi'
-import { navLinks, socialLinks } from '@/app/constants/constants'
-import { Button } from '@/app/ui/design-system/button/button'
 import { LogoComponent } from './LogoComponent';
+import { navLinks, socialLinks } from '../../constants/constants';
+import { Button } from '../../ui/design-system/button/button';
 
 
 const MobileMenu = () => {

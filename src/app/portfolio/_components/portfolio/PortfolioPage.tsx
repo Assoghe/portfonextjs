@@ -1,9 +1,8 @@
-import { portfolioData } from '@/app/constants/constants';
-import { Button } from '@/app/ui/design-system/button/button';
-import { Typography } from '@/app/ui/design-system/typography/typography';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { Typography } from '../../../ui/design-system/typography/typography';
+import { portfolioData } from '../../../constants/constants';
 
 export default function PortfolioSection() {
 

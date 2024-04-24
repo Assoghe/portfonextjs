@@ -1,6 +1,7 @@
 import { FaGithub, FaBehance, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
 import { SiAdobeaftereffects, SiAdobeillustrator, SiAdobeindesign, SiAdobephotoshop, SiAdobepremierepro, SiCss3, SiFigma, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
+import React from 'react';
 
 
 export const navLinks = [

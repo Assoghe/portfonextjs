@@ -1,8 +1,8 @@
-import { service } from '@/app/constants/constants'
-import { BlocColor } from '@/app/ui/bloc-color/bloc-color'
-import { Typography } from '@/app/ui/design-system/typography/typography'
-import { Tag } from '@/app/ui/tag/tag'
-import React from 'react'
+import React from 'react';
+import { service } from '../../../constants/constants'
+import { Typography } from '../../../ui/design-system/typography/typography';
+import { Tag } from '../../../ui/tag/tag';
+import { BlocColor } from '../../../ui/bloc-color/bloc-color';
 
 export default function ServicesSection() {
   return (

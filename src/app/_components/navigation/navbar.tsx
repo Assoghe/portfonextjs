@@ -1,11 +1,11 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
-import { navLinks, socialLinks } from '@/app/constants/constants'
 import NavLink from './NavLink'
 import MobileMenu from './MobileMenu'
-import { Button } from '@/app/ui/design-system/button/button'
 import { LogoComponent } from './LogoComponent'
+import { Button } from '../../ui/design-system/button/button'
+import { navLinks, socialLinks } from '../../constants/constants'
 
 
 

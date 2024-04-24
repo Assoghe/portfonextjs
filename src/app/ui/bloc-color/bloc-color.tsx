@@ -1,7 +1,7 @@
+import React from 'react';
 import clsx from "clsx";
 import { Component, ReactNode } from "react";
 import { Typography } from "../design-system/typography/typography";
-import Divider from "../design-system/divider/divider";
 
 interface Props {
     title?: any;
@@ -36,7 +36,6 @@ export const BlocColor = ({
                     {title}
                 </Typography>
             )}
-            <Divider />
             {content && (
                 <Typography variant='body-one' component='p' className='mt-4 text-neutral-950'>
                     {content}
