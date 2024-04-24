@@ -13,7 +13,7 @@ const ContactSection = () => {
             Intéressée par mon profil ? N’hésitez pas à me contacter ! 
         </Typography>
 
-        <div className='flex items-center justify-center flex-1 gap-10'>
+        <div className='flex flex-wrap items-center justify-center flex-1 gap-10'>
         {
                 socialLinks.map((icon, index)=>(
                     <Button

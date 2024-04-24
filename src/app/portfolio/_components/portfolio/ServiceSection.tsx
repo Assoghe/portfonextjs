@@ -14,7 +14,7 @@ export default function ServicesSection() {
       <Typography variant='h3' component='h3' className='text-neutral-500 mb-6'>
         Soft skills
       </Typography>
-      <div className='flex gap-6 mb-9'>
+      <div className='flex flex-wrap gap-6 mb-9' >
         <Tag variant="outline"> Curiosite</Tag>
         <Tag variant="outline"> Ecoute </Tag>
         <Tag variant="outline"> Autonomie </Tag>
