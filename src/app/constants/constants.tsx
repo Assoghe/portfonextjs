@@ -1,5 +1,6 @@
 import { FaGithub, FaBehance, FaLinkedin } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
+import { SiAdobeaftereffects, SiAdobeillustrator, SiAdobeindesign, SiAdobephotoshop, SiAdobepremierepro, SiCss3, SiFigma, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 
 export const navLinks = [
@@ -181,7 +182,7 @@ export const navLinks = [
 
   export const service = [
     {
-      title: <> User <br/> Experience </>,
+      title: "User Experience",
       content: <>
         Interview utilisateur <br/>
         Persona <br/>
@@ -193,7 +194,7 @@ export const navLinks = [
     },
 
     {
-      title: <>User <br/> Interface</>,
+      title: "User Interface",
       content: <>
         Maquette High fidelity <br/>
         Design system
@@ -201,7 +202,7 @@ export const navLinks = [
     },
 
     {
-      title: <> Integration  <br/>web</>,
+      title: "Integration web",
       content: <>
         HTML <br/>
         CSS <br/>
@@ -213,7 +214,7 @@ export const navLinks = [
     },
 
     {
-      title: <> Design <br/> graphique </>,
+      title: <> Design graphique </>,
       content: <>
         Création d’identité visuelle <br/>
         Retouche photo <br/>
@@ -223,3 +224,60 @@ export const navLinks = [
     }
   ]
 
+export const aboutTools = [
+  {
+    icon: SiAdobephotoshop,
+    label: "Photoshop",
+  },
+  {
+    icon: SiAdobeillustrator,
+    label: "Illustrator",
+  },
+  {
+    icon: SiAdobeindesign,
+    label: "Indesign",
+  },
+  {
+    icon: SiAdobepremierepro,
+    label: "Premiere pro",
+  },
+  {
+    icon: SiAdobeaftereffects,
+    label: "After Effect",
+  },
+  {
+    icon: SiFigma,
+    label: "Figma",
+  }
+]
+
+export const devTools = [
+  {
+    icon: SiHtml5,
+    label: "HTML",
+  },
+  {
+    icon: SiCss3,
+    label: "CSS",
+  },
+  {
+    icon: SiJavascript,
+    label: "Javascript",
+  },
+  {
+    icon: SiReact,
+    label: "React JS",
+  },
+  {
+    icon: SiTypescript,
+    label: "Typescript - Débute",
+  },
+  {
+    icon: SiNextdotjs,
+    label: "Next JS - Débute",
+  },
+  {
+    icon: SiTailwindcss,
+    label: "Tailwind - Débute",
+  }
+]
