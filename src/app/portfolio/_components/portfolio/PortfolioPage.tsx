@@ -9,6 +9,8 @@ export default function PortfolioSection() {
     const PortfolioItem = ({ name, description, image, id }: { name: string, description: string, image: string, id:number }) => {
         return (
             <div className='mb-56'>
+                 <Link href={`/case-study/${id}`}>
+                    <a>
                 <Image className='rounded-xl drop-shadow-md'
                     src={image}
                     alt={name}
@@ -25,6 +27,8 @@ export default function PortfolioSection() {
                         {description}
                     </Typography>
                 </div>
+                </a>
+                </Link>
             </div>
         );
     };
