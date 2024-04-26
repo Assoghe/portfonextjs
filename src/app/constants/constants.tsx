@@ -118,7 +118,7 @@ export const portfolioData = [
       wireframeText: "En m'appuyant sur les wireframes réalisés par le chef de projet, j'ai conçu sur Adobe XD la page d'accueil et une fiche client. La page d'accueil est la première page sur laquelle l'utilisateur arrive. La fiche client regroupe les informations relatives au client, telles que les fiches de soins, le projet de tatouage du client et l'acompte du projet. Une fois les wireframes réalisés, j'ai élaboré des maquettes réalistes présentées ensuite au client.",
       wireframeImg: "/assets/img/usecase/tattoo/architecture-tattoo.png",
       designsystemText: "Pendant le projet, nous avons travaillé avec Adobe XD. Au fil du temps, j'ai créé une planche d'assets regroupant les différents composants, icônes ainsi que les typographies utilisées. Cette planche d'assets offre une vue d'ensemble des différents éléments graphiques de l'application.",
-      designsystemImg: "/assets/img/usecase/tattoo/tattoodesignsystem-tattoo.png",
+      designsystemImg: "/assets/img/usecase/tattoo/tattoodesignsystem.png",
       maquetteText: "Dans cette section, vous trouverez quelques pages des maquettes que j'ai réalisées pour Tattoomorrow.",
       maquetteImgOne: "/assets/img/usecase/tattoo/maquette-one-tattoo.png",
       maquetteHeadingOne: "Page d'accueil ",

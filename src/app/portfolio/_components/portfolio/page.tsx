@@ -6,7 +6,7 @@ import ServicesSection from "./ServiceSection";
 
 function PortfolioPage() {
   return (
-      <div className="px-12 tablet:px-52">
+      <div className="px-8 tablet:px-52">
       <HeroTopView/>
       <PortfolioSection/>
       <ServicesSection/>
