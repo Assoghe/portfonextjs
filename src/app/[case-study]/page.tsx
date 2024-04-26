@@ -14,6 +14,8 @@ const CaseStudyTest = () => {
   // State
   const pathname = usePathname();
 
+
+
   //Comportement
   const portfolioToDisplay = getPortfolio(pathname)
   //Affichage
@@ -93,43 +95,43 @@ const CaseStudyTest = () => {
         />
       </div>
 
-      <Divider/>
+      <Divider />
 
       <div className='block tablet:flex my-16 tablet:my-36'>
-          <Typography variant='h3' component='h3' className='tablet:mr-9 tablet:w-[440px]'>
-            Veille concurrentielle
-          </Typography>
-          <Typography variant='body-two' component='p' className='w-full'>
-            {portfolioToDisplay?.case.veilleText}
-          </Typography>
-        </div>
+        <Typography variant='h3' component='h3' className='tablet:mr-9 tablet:w-[440px]'>
+          Veille concurrentielle
+        </Typography>
+        <Typography variant='body-two' component='p' className='w-full'>
+          {portfolioToDisplay?.case.veilleText}
+        </Typography>
+      </div>
 
-        <div className='grid grid-cols-1 tablet:grid-cols-2 my-16 tablet:my-36 w-full gap-12'>
-          <Image className='rounded-xl drop-shadow-md w-full'
-            src={portfolioToDisplay?.case.veilleImgOne}
-            alt={portfolioToDisplay?.name}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: '100%', height: 'auto' }}
-          />
-          <Image className='rounded-xl drop-shadow-md w-full'
-            src={portfolioToDisplay?.case.veilleImgTwo}
-            alt={portfolioToDisplay?.name}
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: '100%', height: 'auto' }}
-          />
-        </div>
+      <div className='grid grid-cols-1 tablet:grid-cols-2 my-16 tablet:my-36 w-full gap-12'>
+        <Image className='rounded-xl drop-shadow-md w-full'
+          src={portfolioToDisplay?.case.veilleImgOne}
+          alt={portfolioToDisplay?.name}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+        />
+        <Image className='rounded-xl drop-shadow-md w-full'
+          src={portfolioToDisplay?.case.veilleImgTwo}
+          alt={portfolioToDisplay?.name}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+        />
+      </div>
 
-        <div className='block tablet:flex my-16 tablet:my-36'>
-          <Typography variant='h3' component='h3' className=' tablet:mr-9 tablet:w-[440px]'>
-            Conclusion veille
-          </Typography>
-          <Typography variant='body-one' component='p' className='w-full'>
-            {portfolioToDisplay?.case.veilleConclusion}
-          </Typography>
+      <div className='block tablet:flex my-16 tablet:my-36'>
+        <Typography variant='h3' component='h3' className=' tablet:mr-9 tablet:w-[440px]'>
+          Conclusion veille
+        </Typography>
+        <Typography variant='body-one' component='p' className='w-full'>
+          {portfolioToDisplay?.case.veilleConclusion}
+        </Typography>
       </div>
 
 
@@ -218,7 +220,7 @@ const CaseStudyTest = () => {
               {portfolioToDisplay?.case.maquetteTextOne}
             </Typography>
           </div>
-            <Image className='rounded-xl drop-shadow-md w-full'
+          <Image className='rounded-xl drop-shadow-md w-full'
             src={portfolioToDisplay?.case.maquetteImgOne}
             alt={portfolioToDisplay?.case.maquetteTextOne}
             width={696}
@@ -276,7 +278,7 @@ const CaseStudyTest = () => {
             </Typography>
           </div>
         </div>
-    </div>
+      </div>
 
       <BlocColor className='my-16 tablet:my-36'
         key={portfolioToDisplay?.id}
