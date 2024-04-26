@@ -15,7 +15,6 @@ const CaseStudyTest = () => {
 
   //Comportement
   const portfolioToDisplay = getPortfolio(pathname)
-  console.log('portfolioToDisplay: ', portfolioToDisplay)
   //Affichage
   return (
     <div className='px-8 tablet:px-52 mt-56	'>
@@ -68,7 +67,7 @@ const CaseStudyTest = () => {
       <Divider />
 
       <div className='block tablet:flex my-16 tablet:my-36'>
-        <Typography variant='h3' component='h3' className='mb-1 tablet:mb-9 tablet:w-96	tablet:mr-9 tablet:w-[440px] '>
+        <Typography variant='h3' component='h3' className='mb-1 tablet:mb-9 tablet:mr-9 tablet:w-[440px] '>
           A propos du projet
         </Typography>
         <Typography variant='body-one' component='p' className='w-full'>
