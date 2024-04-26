@@ -7,7 +7,7 @@ import { BlocColor } from '@/app/ui/bloc-color/bloc-color';
 import { portfolioData } from '@/app/constants/constants';
 import { usePathname } from 'next/navigation';
 import { PortfolioType } from '@/app/types/portfo';
-import { getPortfolio } from '@/utils/getPortfolio';
+import { getPortfolio } from '@/app/utils/getPortfolio';
 
 
 const CaseStudyTest = () => {
