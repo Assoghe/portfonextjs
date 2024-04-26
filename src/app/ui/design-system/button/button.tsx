@@ -17,6 +17,8 @@ interface Props {
     action?: Function;
     baseUrl?: string;
     linkType?: LinkType;
+    className?: string; 
+
 }
 
 export const Button = ({
@@ -31,6 +33,7 @@ export const Button = ({
     baseUrl,
     linkType,
     action = () => {},
+    className,
 
 }: Props) => {
 
