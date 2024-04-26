@@ -7,6 +7,7 @@ import { BlocColor } from '@/app/ui/bloc-color/bloc-color';
 import { portfolioData } from '@/app/constants/constants';
 import { usePathname } from 'next/navigation';
 import { PortfolioType } from '@/app/types/portfo';
+import { getPortfolio } from '@/utils/getPortfolio';
 
 
 const CaseStudyTest = () => {
@@ -123,7 +124,7 @@ const CaseStudyTest = () => {
         </div>
 
         <div className='block tablet:flex my-16 tablet:my-36'>
-          <Typography variant='h3' component='h3' className='tablet:w-96 tablet:mr-9 tablet:w-[440px]'>
+          <Typography variant='h3' component='h3' className=' tablet:mr-9 tablet:w-[440px]'>
             Conclusion veille
           </Typography>
           <Typography variant='body-one' component='p' className='w-full'>
@@ -136,7 +137,7 @@ const CaseStudyTest = () => {
 
       <div className='my-16 tablet:my-36'>
         <div className='block tablet:flex my-16 tablet:my-36'>
-          <Typography variant='h3' component='h3' className='tablet:w-96 tablet:mr-9 w-[440px]'>
+          <Typography variant='h3' component='h3' className='tablet:mr-9 w-[440px]'>
             Architecture de l'information
           </Typography>
           <Typography variant='body-two' component='p' className='w-full'>
@@ -296,14 +297,5 @@ const CaseStudyTest = () => {
   );
 }
 
-export function getPortfolio(pathname: string): PortfolioType {
 
-  const normalizedPathname = pathname.substring(1);
-
-  const portfolioFound = portfolioData.find(portfolio =>
-    portfolio.name === normalizedPathname
-  );
-
-  return portfolioFound;
-}
 export default CaseStudyTest;
