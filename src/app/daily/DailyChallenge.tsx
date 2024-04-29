@@ -21,12 +21,14 @@ export const DailyChallenge = () => {
                                     style={{ width: '100%', height: 'auto' }}
                                 />
                             </div>
-                            <div className="flex justify-between">
+                            <div className="flex justify-between align-bottom">
                                 <div>
                                     <Typography variant='h2' component='h2'>{daily.name}</Typography>
                                     <Typography variant="body-one" component='p' className='text-neutral-300'>{daily.description}</Typography>
                                 </div>
-                                Voir l'étude de cas
+                                <Typography variant='h4' component='h4' className='text-primary'>
+                                    Voir l'étude de cas
+                                </Typography>
                             </div>
                         </div>
                     ))
