@@ -1,8 +1,8 @@
-import { service } from '@/app/constants/constants'
-import { BlocColor } from '@/app/ui/bloc-color/bloc-color'
-import { Typography } from '@/app/ui/design-system/typography/typography'
-import { Tag } from '@/app/ui/tag/tag'
-import React from 'react'
+import React from 'react';
+import { service } from '../../../constants/constants'
+import { Typography } from '../../../ui/design-system/typography/typography';
+import { Tag } from '../../../ui/tag/tag';
+import { BlocColor } from '../../../ui/bloc-color/bloc-color';
 
 export default function ServicesSection() {
   return (
@@ -17,7 +17,8 @@ export default function ServicesSection() {
       <div className='flex flex-wrap gap-6 mb-9' >
         <Tag variant="outline"> Curiosite</Tag>
         <Tag variant="outline"> Ecoute </Tag>
-        <Tag variant="outline"> Autonomie </Tag>
+          <Tag variant="outline"> Autonomie </Tag>
+
       </div>
 </div>
 <div className='grid grid-cols-1 gap-4 w-auto tablet:grid-cols-2 desktop:grid-cols-4'>
