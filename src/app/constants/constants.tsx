@@ -181,6 +181,462 @@ export const portfolioData = [
   },
 ]
 
+export const dailyData = [
+  {
+    name: "Daily Ui Challenge",
+    description: "Challenge journaliere sur l'UI design",
+    image: "/assets/img/dailychallengeui.png",
+    dailyCases: [
+
+      {
+        dailyNumber: "Daily Challenge 1",
+        dailyTitle: "Ecran d’une card d’un produit",
+        dailyImg: "/assets/img/daily/one.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 2",
+        dailyTitle: "Ecran  d’un player audio",
+        dailyImg: "/assets/img/daily/two.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 3",
+        dailyTitle: "Ecran d’une page de connexion",
+        dailyImg: "/assets/img/daily/three.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 4",
+        dailyTitle: "Ecran d’une page d’inscription",
+        dailyImg: "/assets/img/daily/four.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 5",
+        dailyTitle: "Ecran d’une pop up",
+        dailyImg: "/assets/img/daily/five.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 6",
+        dailyTitle: "Ecran d’un calendrier",
+        dailyImg: "/assets/img/daily/six.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 7",
+        dailyTitle: "Ecran d’une carte de crédit",
+        dailyImg: "/assets/img/daily/seven.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 8",
+        dailyTitle: "Ecran d’une liste de catégories",
+        dailyImg: "/assets/img/daily/eight.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 9",
+        dailyTitle: "Ecran d’une pop up de confirmation",
+        dailyImg: "/assets/img/daily/nine.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 10",
+        dailyTitle: "Ecran d’une vue de profile ",
+        dailyImg: "/assets/img/daily/ten.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 11",
+        dailyTitle: "Ecran d’une page de code PIN",
+        dailyImg: "/assets/img/daily/eleven.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 12",
+        dailyTitle: "Ecran d’une map",
+        dailyImg: "/assets/img/daily/twelve.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 13",
+        dailyTitle: "Ecran d’une calculatrice",
+        dailyImg: "/assets/img/daily/thirteen.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 14",
+        dailyTitle: "Ecran d’une page catégories",
+        dailyImg: "/assets/img/daily/fourteen.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 15",
+        dailyTitle: "Ecran d’une page de cards",
+        dailyImg: "/assets/img/daily/fifteen.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 16",
+        dailyTitle: "Ecran d’une card article",
+        dailyImg: "/assets/img/daily/sixteen.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 17",
+        dailyTitle: "Ecran d’un graphique (lignes)",
+        dailyImg: "/assets/img/daily/seventeen.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 18",
+        dailyTitle: "Ecran d’un graphique (bâton)",
+        dailyImg: "/assets/img/daily/eighteen.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 19",
+        dailyTitle: "Ecran un carousel",
+        dailyImg: "/assets/img/daily/nineteen.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 20",
+        dailyTitle: "Ecran d’une page de liste de pays",
+        dailyImg: "/assets/img/daily/twenty.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 21",
+        dailyTitle: "Ecran pour entrer son code Pin",
+        dailyImg: "/assets/img/daily/twenty-one.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 22",
+        dailyTitle: "Ecran de confirmation de paiement",
+        dailyImg: "/assets/img/daily/twenty-two.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 23",
+        dailyTitle: "Ecran d’alarme",
+        dailyImg: "/assets/img/daily/twenty-three.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 24",
+        dailyTitle: "Ecran une vue météo",
+        dailyImg: "/assets/img/daily/twenty-four.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 25",
+        dailyTitle: "Ecran d’une FAQ",
+        dailyImg: "/assets/img/daily/twenty-five.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 26",
+        dailyTitle: "Ecran de réponse d’une FAQ ",
+        dailyImg: "/assets/img/daily/twenty-six.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 27",
+        dailyTitle: "Ecran message bien envoyé",
+        dailyImg: "/assets/img/daily/twenty-seven.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 28",
+        dailyTitle: "Ecran SMS verification",
+        dailyImg: "/assets/img/daily/twenty-eight.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 29",
+        dailyTitle: "Ecran d’une vue caméra",
+        dailyImg: "/assets/img/daily/twenty-nine.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 30",
+        dailyTitle: "Ecran d’une page de contact",
+        dailyImg: "/assets/img/daily/thirty.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 31",
+        dailyTitle: "Ecran feedback",
+        dailyImg: "/assets/img/daily/thirty-one.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 32",
+        dailyTitle: "Ecran d’une une liste de checkbox",
+        dailyImg: "/assets/img/daily/thirty-two.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 33",
+        dailyTitle: "Ecran site de rencontre",
+        dailyImg: "/assets/img/daily/thirty-three.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 34",
+        dailyTitle: "Ecran de page d’accueil",
+        dailyImg: "/assets/img/daily/thirty-four.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 35",
+        dailyTitle: "Ecran d’une landing page web",
+        dailyImg: "/assets/img/daily/thirty-five.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 36",
+        dailyTitle: "Ecran d’un E-ticket d’un avion ",
+        dailyImg: "/assets/img/daily/thirty-six.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 37",
+        dailyTitle: "Ecran d’une carte identité électronique",
+        dailyImg: "/assets/img/daily/thirty-seven.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 38",
+        dailyTitle: "Ecran d’un message",
+        dailyImg: "/assets/img/daily/thirty-eight.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 39",
+        dailyTitle: "Ecran inbox",
+        dailyImg: "/assets/img/daily/thirty-nine.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 40",
+        dailyTitle: "Ecran de code temporaire",
+        dailyImg: "/assets/img/daily/forty.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 41",
+        dailyTitle: "Ecran QR code",
+        dailyImg: "/assets/img/daily/forty-one.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 42",
+        dailyTitle: " Ecran avec les détails de l'expédition",
+        dailyImg: "/assets/img/daily/forty-two.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 43",
+        dailyTitle: "Ecran de détail de transaction",
+        dailyImg: "/assets/img/daily/forty-three.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 44",
+        dailyTitle: "Ecran de thermes et conditions",
+        dailyImg: "/assets/img/daily/forty-four.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 45",
+        dailyTitle: "Ecran de choix de compte",
+        dailyImg: "/assets/img/daily/forty-five.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 46",
+        dailyTitle: "Ecran erreur 404",
+        dailyImg: "/assets/img/daily/forty-six.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 47",
+        dailyTitle: "Ecran d’invitation à rejoindre un groupe",
+        dailyImg: "/assets/img/daily/forty-seven.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 48",
+        dailyTitle: "Ecran de menu",
+        dailyImg: "/assets/img/daily/forty-eight.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 49",
+        dailyTitle: "Ecran ’’A propos’’",
+        dailyImg: "/assets/img/daily/forty-nine.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 50",
+        dailyTitle: "Ecran de bon de commande",
+        dailyImg: "/assets/img/daily/forty-eight.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 51",
+        dailyTitle: "Ecran de filtre",
+        dailyImg: "/assets/img/daily/fifty-one.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 52",
+        dailyTitle: "Ecran de contact (Vide)",
+        dailyImg: "/assets/img/daily/fifty-two.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 53",
+        dailyTitle: "Ecran de tableau",
+        dailyImg: "/assets/img/daily/fifty-three.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 54",
+        dailyTitle: "Ecran “attention contenu +18”",
+        dailyImg: "/assets/img/daily/fifty-four.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 55",
+        dailyTitle: "Ecran liste de notifications",
+        dailyImg: "/assets/img/daily/fifty-five.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 56",
+        dailyTitle: "Ecran compte en banque",
+        dailyImg: "/assets/img/daily/fifty-six.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 57",
+        dailyTitle: "Ecran carte bancaire bloquée",
+        dailyImg: "/assets/img/daily/fifty-seven.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 58",
+        dailyTitle: "Ecran galerie photo",
+        dailyImg: "/assets/img/daily/fifty-eight.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 59",
+        dailyTitle: "Ecran questionnaire",
+        dailyImg: "/assets/img/daily/fifty-nine.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 60",
+        dailyTitle: "Ecran de détail produit",
+        dailyImg: "/assets/img/daily/sixty.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 61",
+        dailyTitle: "Ecran barre de recherche avec suggesion",
+        dailyImg: "/assets/img/daily/sixty-one.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 62",
+        dailyTitle: "Ecran de livraison",
+        dailyImg: "/assets/img/daily/sixty-two.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 63",
+        dailyTitle: "Ecran de paiement",
+        dailyImg: "/assets/img/daily/sixty-three.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 64",
+        dailyTitle: "Ecran page produit",
+        dailyImg: "/assets/img/daily/sixty-four.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 65",
+        dailyTitle: "Ecran réservation",
+        dailyImg: "/assets/img/daily/sixty-five.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 66",
+        dailyTitle: "Ecran localisation des magasins avec des détails",
+        dailyImg: "/assets/img/daily/sixty-six.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 67",
+        dailyTitle: "Ecran “navigation segmentée”",
+        dailyImg: "/assets/img/daily/sixty-seven.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 68",
+        dailyTitle: "Ecran FM Radio",
+        dailyImg: "/assets/img/daily/sixty-eight.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 69",
+        dailyTitle: "Ecran boussole",
+        dailyImg: "/assets/img/daily/sixty-nine.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 70",
+        dailyTitle: "Ecran roue chromatique",
+        dailyImg: "/assets/img/daily/seventy.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 71",
+        dailyTitle: "Ecran chronomètre",
+        dailyImg: "/assets/img/daily/seventy-one.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 72",
+        dailyTitle: "Ecran horloge universelle",
+        dailyImg: "/assets/img/daily/seventy-two.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 73",
+        dailyTitle: "Ecran appel en cours",
+        dailyImg: "/assets/img/daily/seventy-three.png"
+      },
+
+      {
+        dailyNumber: "Daily Challenge 74",
+        dailyTitle: "Ecran enregistreur de son",
+        dailyImg: "/assets/img/daily/seventy-four.png"
+      },
+
+    ]
+  },
+]
+
+
 export const service = [
   {
     title: "User Experience",
