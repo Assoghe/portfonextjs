@@ -4,7 +4,7 @@ export type PortfolioType = {
     description: string;
     image: string;
     case: CaseStudyType;
-} | undefined
+} | undefined | any
 
 type CaseStudyType = {
     descriptionName?: string;
@@ -41,4 +41,4 @@ type CaseStudyType = {
     maquetteTextFour?: string;
     conclusionText?: string;
     footerImg?: string;
-} 
+} | undefined | any
