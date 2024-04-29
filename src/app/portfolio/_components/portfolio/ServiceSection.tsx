@@ -17,7 +17,8 @@ export default function ServicesSection() {
       <div className='flex flex-wrap gap-6 mb-9' >
         <Tag variant="outline"> Curiosite</Tag>
         <Tag variant="outline"> Ecoute </Tag>
-        <Tag variant="outline"> Autonomie </Tag>
+          <Tag variant="outline"> Autonomie </Tag>
+
       </div>
 </div>
 <div className='grid grid-cols-1 gap-4 w-auto tablet:grid-cols-2 desktop:grid-cols-4'>
