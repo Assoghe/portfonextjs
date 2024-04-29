@@ -31,8 +31,8 @@ const CaseStudyTest = () => {
         </Typography>
 
         <Image className='rounded-xl drop-shadow-md'
-          src={portfolioToDisplay?.image}
-          alt={portfolioToDisplay?.name}
+          src={portfolioToDisplay?.case.descriptionImageCover}
+          alt={portfolioToDisplay?.case.descriptionText}
           width={0}
           height={0}
           sizes="100vw"
