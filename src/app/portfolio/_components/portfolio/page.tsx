@@ -9,6 +9,7 @@ function PortfolioPage() {
   return (
       <div className="px-8 tablet:px-52">
       <HeroTopView/>
+      <DailyChallenge />
       <PortfolioSection/>
       <ServicesSection/>
       <ContactPage/>
