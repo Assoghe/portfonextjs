@@ -30,7 +30,7 @@ export default function PortfolioSection() {
                                 {description}
                             </Typography>
                         </div>
-                        <Typography variant='h4' component='h4'>
+                        <Typography variant='h4' component='h4' className='text-primary'>
                             Voir l'étude de cas
                         </Typography>
                     </div>
