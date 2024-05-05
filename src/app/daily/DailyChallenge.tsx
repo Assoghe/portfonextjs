@@ -21,7 +21,7 @@ export const DailyChallenge = () => {
                                     style={{ width: '100%', height: 'auto' }}
                                 />
                             </div>
-                            <div className="flex justify-between align-bottom">
+                            <div className="my-4 gap-2 tablet:flex tablet:justify-between tablet:items-center">
                                 <div>
                                     <Typography variant='h2' component='h2'>{daily.name}</Typography>
                                     <Typography variant="body-one" component='p' className='text-neutral-300'>{daily.description}</Typography>
