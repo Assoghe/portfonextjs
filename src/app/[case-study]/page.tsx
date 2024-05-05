@@ -6,6 +6,8 @@ import { getPortfolio } from '@/app/utils/getPortfolio';
 import TextSection from './_component/TextSection';
 import Image from 'next/image';
 import { BlocColor } from '../ui/bloc-color/bloc-color';
+import HeadingSection from './_component/Heading';
+import InfoSection from './_component/InfoSection';
 
 const CaseStudy = () => {
     const pathname = usePathname();
@@ -14,6 +16,21 @@ const CaseStudy = () => {
 
     return (
         <div className='mb-56'>
+            <HeadingSection
+                title={portfolioToDisplay?.case.descriptionName}
+                text={portfolioToDisplay?.case.descriptionText}
+                src={portfolioToDisplay?.case.descriptionImageCover}
+            />
+
+            <InfoSection
+            nameClient='Client'
+            client={portfolioToDisplay?.case.infoClient}
+            nameTool='Outil(s)'
+            tool={portfolioToDisplay?.case.infoLiens}
+            nameRole='Role(s)'
+            role={portfolioToDisplay?.case.infoRole}
+            />
+
             <TextSection
                 title="Veille Concurrentiel"
                 text={portfolioToDisplay?.case.veilleText}
@@ -52,7 +69,7 @@ const CaseStudy = () => {
                 sizes="100vw"
                 style={{ width: '100%', height: 'auto' }}
             />
-            <div className='my-16 tablet:my-36 px-6 tablet:px-52'>
+            <div className='my-16 tablet:my-36 px-6 tablet:px-40'>
                <BlocColor
                 title="Les impacts du projet"
                 content={portfolioToDisplay?.case.conclusionText}

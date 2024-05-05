@@ -3,7 +3,7 @@ import About from "./About";
 
 function AboutPage() {
   return (
-    <div className="px-12 tablet:px-52 my-52">
+    <div className="px-12 tablet:px-40 my-52">
       <About/>
     </div>
   )

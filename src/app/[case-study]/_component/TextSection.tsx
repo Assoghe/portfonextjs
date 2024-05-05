@@ -11,16 +11,16 @@ interface TextImgSectionProps {
 }
 
 const TextImgSection: React.FC<TextImgSectionProps> = ({ title, text, src, alt }) => (
-  <div className='px-6 tablet:px-52'>
+  <div className='px-6 tablet:px-40'>
     <div className='tablet:flex'>
-      <Typography variant='h3' component='h3' className='tablet:mr-9 tablet:w-[440px] '>
+      <Typography variant='h3' component='h3' className='tablet:mr-9 tablet:w-[440px] text-neutral-300'>
         {title}
       </Typography>
       <Typography variant='body-one' component='p' className='w-full'>
         {text}
       </Typography>
     </div>
-    <Image className='my-12'
+    <Image className='my-12 rounded-xl drop-shadow-md'
       src={src}
       alt={alt}
       width={0}
