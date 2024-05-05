@@ -21,7 +21,7 @@ export default function PortfolioSection() {
                         sizes="100vw"
                         style={{ width: '100%', height: 'auto' }}
                     />
-                    <div className='my-4 gap-2 flex justify-between'>
+                    <div className='my-4 gap-2 tablet:flex tablet:justify-between tablet:items-center'>
                         <div>
                             <Typography variant='h2' component='h2'>
                                 {name}
