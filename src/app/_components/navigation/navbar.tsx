@@ -11,7 +11,7 @@ import { navLinks, socialLinks } from '../../constants/constants'
 
 const Navbar = () => {
   return (
-    <header className='flex items-center justify-between h-20 max-width border-b border-neutral-800 px-12 tablet:px-40 fixed top-0 left-0 right-0 w-full z-50 bg-neutral-950'>
+    <header className='flex items-center justify-between h-20 max-width border-b border-neutral-800 px-6 tablet:px-40 fixed top-0 left-0 right-0 w-full z-50 bg-neutral-950'>
       <Link href={"/"}>
           <LogoComponent size='little'/>
       </Link>

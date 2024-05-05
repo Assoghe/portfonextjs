@@ -1,6 +1,5 @@
 'use client'
 import React from 'react';
-import Divider from '@/app/ui/design-system/divider/divider';
 import { usePathname } from 'next/navigation';
 import { getPortfolio } from '@/app/utils/getPortfolio';
 import TextSection from './_component/TextSection';
@@ -8,11 +7,12 @@ import Image from 'next/image';
 import { BlocColor } from '../ui/bloc-color/bloc-color';
 import HeadingSection from './_component/Heading';
 import InfoSection from './_component/InfoSection';
+import { Typography } from '../ui/design-system/typography/typography';
+import Divider from '../ui/design-system/divider/divider';
 
 const CaseStudy = () => {
     const pathname = usePathname();
     const portfolioToDisplay = getPortfolio(pathname);
-
 
     return (
         <div className='mb-56'>
@@ -23,19 +23,20 @@ const CaseStudy = () => {
             />
 
             <InfoSection
-            nameClient='Client'
-            client={portfolioToDisplay?.case.infoClient}
-            nameTool='Outil(s)'
-            tool={portfolioToDisplay?.case.infoLiens}
-            nameRole='Role(s)'
-            role={portfolioToDisplay?.case.infoRole}
+                nameClient='Client'
+                client={portfolioToDisplay?.case.infoClient}
+                nameTool='Outil(s)'
+                tool={portfolioToDisplay?.case.infoLiens}
+                nameRole='Role(s)'
+                role={portfolioToDisplay?.case.infoRole}
             />
 
             <TextSection
-                title="Veille Concurrentiel"
+                title="Veille Concurrentielle"
                 text={portfolioToDisplay?.case.veilleText}
                 src={portfolioToDisplay?.case.veille}
             />
+
             <TextSection
                 title="Architecture de l'information"
                 text={portfolioToDisplay?.case.architectureText}
@@ -69,18 +70,18 @@ const CaseStudy = () => {
                 sizes="100vw"
                 style={{ width: '100%', height: 'auto' }}
             />
-            <div className='my-16 tablet:my-36 px-6 tablet:px-40'>
-               <BlocColor
-                title="Les impacts du projet"
-                content={portfolioToDisplay?.case.conclusionText}
-            /> 
+
+            <div className='mx-6 tablet:mx-40 bg-primary rounded-xl p-9 my-12 '>
+                <Typography variant='h4' component='h4' className='text-neutral-950'>Les impacts du projet</Typography>
+                <Divider/>
+                <ul>
+                    {portfolioToDisplay?.case.conclusionText.split('-').map((item: string, index: React.Key | null | undefined) => (
+                        <div className='mt-4 text-neutral-950 text-lg w-full' key={index}><li> - {item.trim()}</li> <br /></div>
+                    ))}
+                </ul>
             </div>
-            
         </div>
-
-
-
     );
-}
+};
 
 export default CaseStudy;
