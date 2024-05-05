@@ -106,17 +106,9 @@ const CaseStudyTest = () => {
         </Typography>
       </div>
 
-      <div className='grid grid-cols-1 tablet:grid-cols-2 my-16 tablet:my-36 w-full gap-12'>
+      <div className='my-16 tablet:my-36 w-full gap-12'>
         <Image className='rounded-xl drop-shadow-md w-full'
-          src={portfolioToDisplay?.case.veilleImgOne}
-          alt={portfolioToDisplay?.name}
-          width={0}
-          height={0}
-          sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
-        />
-        <Image className='rounded-xl drop-shadow-md w-full'
-          src={portfolioToDisplay?.case.veilleImgTwo}
+          src={portfolioToDisplay?.case.veille}
           alt={portfolioToDisplay?.name}
           width={0}
           height={0}
@@ -211,7 +203,7 @@ const CaseStudyTest = () => {
         </div>
 
 
-        <div className='block tablet:grid tablet:grid-cols-2 gap-9 items-center my-16 tablet:my-36	w-auto'>
+        <div className='gap-9 items-center my-16 tablet:my-36	w-auto'>
           <div className='w-auto'>
             <Typography variant='h4' component='h4'>
               {portfolioToDisplay?.case.maquetteHeadingOne}
@@ -228,7 +220,7 @@ const CaseStudyTest = () => {
           />
         </div>
 
-        <div className='grid grid-cols-1 tablet:grid-cols-2 gap-9 items-center my-16 tablet:my-36	w-auto'>
+        <div className='gap-9 items-center my-16 tablet:my-36	w-auto'>
           <Image className='rounded-xl drop-shadow-md w-full'
             src={portfolioToDisplay?.case.maquetteImgTwo}
             alt={portfolioToDisplay?.case.maquetteTextTwo}
@@ -244,41 +236,7 @@ const CaseStudyTest = () => {
             </Typography>
           </div>
         </div>
-
-        <div className='grid grid-cols-1 tablet:grid-cols-2 gap-9 items-center my-16 tablet:my-36	w-auto'>
-          <div className='w-auto'>
-            <Typography variant='h4' component='h4'>
-              {portfolioToDisplay?.case.maquetteHeadingThree}
-            </Typography>
-            <Typography variant='body-two' component='p' className="text-neutral-200">
-              {portfolioToDisplay?.case.maquetteTextThree}
-            </Typography>
-          </div>
-          <Image className='rounded-xl drop-shadow-md w-full'
-            src={portfolioToDisplay?.case.maquetteImgThree}
-            alt={portfolioToDisplay?.case.maquetteTextThree}
-            width={696}
-            height={696}
-          />
-        </div>
-
-        <div className='grid grid-cols-1 tablet:grid-cols-2 gap-9 items-center my-16 tablet:my-36	w-auto'>
-          <Image className='rounded-xl drop-shadow-md w-full'
-            src={portfolioToDisplay?.case.maquetteImgFour}
-            alt={portfolioToDisplay?.case.maquetteTextFour}
-            width={696}
-            height={696}
-          />
-          <div className='w-auto'>
-            <Typography variant='h4' component='h4'>
-              {portfolioToDisplay?.case.maquetteHeadingFour}
-            </Typography>
-            <Typography variant='body-two' component='p' className="text-neutral-200">
-              {portfolioToDisplay?.case.maquetteTextFour}
-            </Typography>
-          </div>
-        </div>
-      </div>
+  </div>
 
       <BlocColor className='my-16 tablet:my-36'
         key={portfolioToDisplay?.id}
