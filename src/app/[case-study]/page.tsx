@@ -20,13 +20,13 @@ const CaseStudyTest = () => {
   const portfolioToDisplay = getPortfolio(pathname)
   //Affichage
   return (
-    <div className='px-8 tablet:px-52 mt-56	'>
-      <div>
+    <div className='my-56'>
+      <div className='tablet:px-52 px-6'>
         <Typography variant='h1' component='h1' className='tablet:w-[440px]'>
           {portfolioToDisplay?.case.descriptionName}
         </Typography>
 
-        <Typography variant='body-two' component='p' className='mb-9 text-neutral-300 w-full'>
+        <Typography variant='body-two' component='p' className='mb-9 text-neutral-300 '>
           {portfolioToDisplay?.case.descriptionText}
         </Typography>
 
@@ -36,10 +36,10 @@ const CaseStudyTest = () => {
           width={0}
           height={0}
           sizes="100vw"
-          style={{ width: '100%', height: 'auto' }}
+          style={{ width: '100%', height: 'auto'}}
         />
 
-        <div className='block tablet:flex w-full mt-20 mb-9'>
+        <div className='block tablet:flex w-full my-6 tablet:mt-20 tablet:px-52'>
           <div className='w-full mb-6'>
             <Typography variant='h6' component='h6' className='text-neutral-300'>
               Client
@@ -66,10 +66,13 @@ const CaseStudyTest = () => {
           </div>
         </div>
       </div>
+      <div className='tablet:px-52 tablet:my-36 my-16 px-6'>
+        <Divider />
+      </div>
 
-      <Divider />
 
-      <div className='block tablet:flex my-16 tablet:my-36'>
+
+      <div className='block tablet:flex tablet:my-36 tablet:px-52 px-6 my-6'>
         <Typography variant='h3' component='h3' className='mb-1 tablet:mb-9 tablet:mr-9 tablet:w-[440px] '>
           A propos du projet
         </Typography>
@@ -78,27 +81,31 @@ const CaseStudyTest = () => {
         </Typography>
       </div>
 
-      <div className='grid grid-cols-1 gap-9 w-auto tablet:grid-cols-2 desktop:grid-cols-4 my-16 tablet:my-36'>
 
-        <BlocColor
-          key={portfolioToDisplay?.id}
-          theme='primary'
-          title={'Probleme'}
-          content={portfolioToDisplay?.case.aboutProbleme}
-        />
+      <div className='tablet:my-36 tablet:px-52 tablet-my-16 px-6 mb-9'>
+        <div className='grid grid-cols-1 gap-9 w-auto tablet:grid-cols-2 '>
+          <BlocColor
+            key={portfolioToDisplay?.id}
+            theme='primary'
+            title={'Probleme'}
+            content={portfolioToDisplay?.case.aboutProbleme}
+          />
 
-        <BlocColor
-          key={portfolioToDisplay?.id}
-          theme='secondary'
-          title={'Solution'}
-          content={portfolioToDisplay?.case.aboutSolution}
-        />
+          <BlocColor
+            key={portfolioToDisplay?.id}
+            theme='secondary'
+            title={'Solution'}
+            content={portfolioToDisplay?.case.aboutSolution}
+          />
+        </div>
       </div>
 
-      <Divider />
+      <div className='tablet:px-52 tablet:my-36 my-16 px-6'>
+        <Divider />
+      </div>
 
-      <div className='block tablet:flex my-16 tablet:my-36'>
-        <Typography variant='h3' component='h3' className='tablet:mr-9 tablet:w-[440px]'>
+      <div className='tablet:my-36 tablet:px-52 tablet-my-16 px-6 mb-9'>
+        <Typography variant='h3' component='h3' className='mb-1 tablet:mb-9 tablet:mr-9 tablet:w-[440px]'>
           Veille concurrentielle
         </Typography>
         <Typography variant='body-two' component='p' className='w-full'>
@@ -106,7 +113,7 @@ const CaseStudyTest = () => {
         </Typography>
       </div>
 
-      <div className='my-16 tablet:my-36 w-full gap-12'>
+      <div className='my-16 tablet:my-36 w-full gap-12 tablet:px-52 px-6'>
         <Image className='rounded-xl drop-shadow-md w-full'
           src={portfolioToDisplay?.case.veille}
           alt={portfolioToDisplay?.name}
@@ -117,7 +124,7 @@ const CaseStudyTest = () => {
         />
       </div>
 
-      <div className='block tablet:flex my-16 tablet:my-36'>
+      <div className='block tablet:flex my-16 tablet:my-36 tablet:px-52 px-6'>
         <Typography variant='h3' component='h3' className=' tablet:mr-9 tablet:w-[440px]'>
           Conclusion veille
         </Typography>
@@ -126,10 +133,12 @@ const CaseStudyTest = () => {
         </Typography>
       </div>
 
+      <div className='tablet:px-52 tablet:my-36 my-16 px-6'>
+        <Divider />
+      </div>
 
-      <Divider />
 
-      <div className='my-16 tablet:my-36'>
+      <div className='my-16 tablet:my-36 tablet:px-52'>
         <div className='block tablet:flex my-16 tablet:my-36'>
           <Typography variant='h3' component='h3' className='tablet:mr-9 w-[440px]'>
             Architecture de l'information
@@ -148,11 +157,13 @@ const CaseStudyTest = () => {
         />
       </div>
 
-      <Divider />
+      <div className='tablet:px-52 tablet:my-36 my-16 px-6'>
+        <Divider />
+      </div>
 
-      <div className='my-16 tablet:my-36'>
-        <div className='block tablet:flex mt-16 mb-9'>
-          <Typography variant='h3' component='h3' className='tablet:w-96 tablet:mr-9 w-[440px]'>
+      <div className='my-16 tablet:my-36 tablet:px-52'>
+        <div className='block tablet:flex my-16 tablet:my-36'>
+          <Typography variant='h3' component='h3' className='my-16 tablet:w-96 tablet:mr-9 w-[440px]'>
             Wireframe
           </Typography>
           <Typography variant='body-one' component='p' className='w-full'>
@@ -169,11 +180,13 @@ const CaseStudyTest = () => {
         />
       </div>
 
-      <Divider />
+      <div className='tablet:px-52 tablet:my-36 my-16 px-6'>
+        <Divider />
+      </div>
 
-      <div className='my-16 tablet:my-36'>
-        <div className='block tablet:flex mt-16 mb-9'>
-          <Typography variant='h3' component='h3' className='tablet:w-96 tablet:mr-9 mb-4 w-[440px]'>
+      <div className='my-16 tablet:my-36 tablet:px-52 px-6'>
+        <div className='block tablet:flex my-16 tablet:my-36'>
+          <Typography variant='h3' component='h3' className='my-16 tablet:w-96 tablet:mr-9 mb-4 w-[440px]'>
             Design system
           </Typography>
           <Typography variant='body-two' component='p' className='w-full'>
@@ -190,62 +203,54 @@ const CaseStudyTest = () => {
         />
       </div>
 
-      <Divider />
+      <div className='tablet:px-52 tablet:my-36 my-16 px-6'>
+        <Divider />
+      </div>
 
-      <div className='my-16 tablet:my-36'>
-        <div className='block tablet:flex mt-16 mb-9'>
-          <Typography variant='h3' component='h3' className='tablet:mr-9 mb-4 tablet:w-[440px]'>
-            Quelques maquettes réalistes
+
+      <div className='my-16 tablet:my-36 px-6 tablet:px-52'>
+        <div className='block tablet:flex my-16 tablet:my-36'>
+          <Typography variant='h3' component='h3' className='tablet:w-96 tablet:mr-9 mb-4 w-[440px]'>
+            {portfolioToDisplay?.case.maquetteHeadingOne}
           </Typography>
           <Typography variant='body-two' component='p' className='w-full'>
-            {portfolioToDisplay?.case.maquetteText}
+            {portfolioToDisplay?.case.maquetteTextOne}
           </Typography>
         </div>
+        <Image className='rounded-xl drop-shadow-md'
+          src={portfolioToDisplay?.case.maquetteImgOne}
+          alt={portfolioToDisplay?.case.maquetteHeadingOne}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+        />
+      </div>
 
+      <div className='tablet:px-52 tablet:my-36 my-16 px-6'>
+        <Divider />
+      </div>
 
-        <div className='gap-9 items-center my-16 tablet:my-36	w-auto'>
-          <div className='w-auto'>
-            <Typography variant='h4' component='h4'>
-              {portfolioToDisplay?.case.maquetteHeadingOne}
-            </Typography>
-            <Typography variant='body-two' component='p' className="text-neutral-200">
-              {portfolioToDisplay?.case.maquetteTextOne}
-            </Typography>
-          </div>
-          <Image className='rounded-xl drop-shadow-md w-full'
-            src={portfolioToDisplay?.case.maquetteImgOne}
-            alt={portfolioToDisplay?.case.maquetteTextOne}
-            width={696}
-            height={696}
-          />
+      <div className='my-16 tablet:my-36 px-6 tablet:px-52'>
+        <div className='block tablet:flex my-16 tablet:my-36'>
+          <Typography variant='h3' component='h3' className='tablet:w-96 tablet:mr-9 mb-4 w-[440px]'>
+            {portfolioToDisplay?.case.maquetteHeadingTwo}
+          </Typography>
+          <Typography variant='body-two' component='p' className='w-full'>
+            {portfolioToDisplay?.case.maquetteTextTwo}
+          </Typography>
         </div>
+        <Image className='rounded-xl drop-shadow-md'
+          src={portfolioToDisplay?.case.maquetteImgTwo}
+          alt={portfolioToDisplay?.case.maquetteHeadingTwo}
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: '100%', height: 'auto' }}
+        />
+      </div>
 
-        <div className='gap-9 items-center my-16 tablet:my-36	w-auto'>
-          <Image className='rounded-xl drop-shadow-md w-full'
-            src={portfolioToDisplay?.case.maquetteImgTwo}
-            alt={portfolioToDisplay?.case.maquetteTextTwo}
-            width={696}
-            height={696}
-          />
-          <div className='w-auto'>
-            <Typography variant='h4' component='h4'>
-              {portfolioToDisplay?.case.maquetteHeadingTwo}
-            </Typography>
-            <Typography variant='body-two' component='p' className="text-neutral-200">
-              {portfolioToDisplay?.case.maquetteTextTwo}
-            </Typography>
-          </div>
-        </div>
-  </div>
-
-      <BlocColor className='my-16 tablet:my-36'
-        key={portfolioToDisplay?.id}
-        theme='primary'
-        title={'Les impacts du projet'}
-        content={portfolioToDisplay?.case.conclusionText}
-      />
-
-      <Image className='rounded-xl drop-shadow-md my-16 tablet:my-36'
+      <Image className='rounded-xl drop-shadow-md'
         src={portfolioToDisplay?.case.footerImg}
         alt={portfolioToDisplay?.name}
         width={0}
@@ -253,6 +258,15 @@ const CaseStudyTest = () => {
         sizes="100vw"
         style={{ width: '100%', height: 'auto' }}
       />
+
+      <div className='tablet:px-52 mb-9'>
+        <BlocColor className='my-16 tablet:my-36 '
+          key={portfolioToDisplay?.id}
+          theme='primary'
+          title={'Les impacts du projet'}
+          content={portfolioToDisplay?.case.conclusionText}
+        />
+      </div>
     </div >
   );
 }
