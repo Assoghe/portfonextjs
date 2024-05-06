@@ -20,6 +20,7 @@ const CaseStudy = () => {
                 title={portfolioToDisplay?.case.descriptionName}
                 text={portfolioToDisplay?.case.descriptionText}
                 src={portfolioToDisplay?.case.descriptionImageCover}
+                alt={portfolioToDisplay?.case.descriptionName}
             />
 
             <InfoSection

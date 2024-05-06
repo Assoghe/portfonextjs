@@ -8,8 +8,6 @@ export default function PortfolioSection() {
 
     const PortfolioItem = ({ name, description, image, id }: { name: string, description: string, image: string, id: number }) => {
 
-        // const idStringified = id.toString()
-
         return (
             <div className='mb-56'>
                 <Link href={name}>
