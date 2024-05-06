@@ -8,7 +8,7 @@ import IconWithLabel from '../_components/iconComponent/iconComponent';
 const About = () => {
   return (
     <>
-      <div className='mb-52'>
+      <div className='mb-40'>
         <Typography variant='h1' component='h1' className='mb-8'>
           Soraya Gherras
         </Typography>
