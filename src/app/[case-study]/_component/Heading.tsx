@@ -2,12 +2,13 @@ import React from 'react';
 import { Typography } from '@/app/ui/design-system/typography/typography';
 import Image from 'next/image';
 import Divider from '@/app/ui/design-system/divider/divider';
+import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 
 interface HeadingSectionProps {
     title?: string;
     text?: string;
-    src?: string | undefined;
-    alt?: string | undefined;
+    src?: string | StaticImport;
+    alt?: string | StaticImport;
 }
 
 const HeadingSection: React.FC<HeadingSectionProps> = ({ title, text, src, alt }) => (
