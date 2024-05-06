@@ -6,8 +6,8 @@ import Divider from '@/app/ui/design-system/divider/divider';
 interface TextImgSectionProps {
   title?: string;
   text?: string;
-  src?: string;
-  alt?: string;
+  src?: string | undefined;
+  alt?: string | undefined;
 }
 
 const TextImgSection: React.FC<TextImgSectionProps> = ({ title, text, src, alt }) => (
