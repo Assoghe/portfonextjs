@@ -58,6 +58,7 @@ const CaseStudy = () => {
             <TextSection
                 title="Veille Concurrentielle"
                 text={portfolioToDisplay?.case.veilleText}
+                alt={portfolioToDisplay?.case.veilleText}
                 src={portfolioToDisplay?.case.veille}
             />
 
@@ -65,26 +66,35 @@ const CaseStudy = () => {
                 title="Architecture de l'information"
                 text={portfolioToDisplay?.case.architectureText}
                 src={portfolioToDisplay?.case.architectureImg}
+                alt={portfolioToDisplay?.case.architectureText}
             />
             <TextSection
                 title="Wireframes"
                 text={portfolioToDisplay?.case.wireframeText}
                 src={portfolioToDisplay?.case.wireframeImg}
+                alt={portfolioToDisplay?.case.wireframeText}
+
             />
             <TextSection
                 title="Design System"
                 text={portfolioToDisplay?.case.designsystemText}
                 src={portfolioToDisplay?.case.designsystemImg}
+                alt={portfolioToDisplay?.case.designsystemText}
+
             />
             <TextSection
                 title={portfolioToDisplay?.case.maquetteHeadingOne}
                 text={portfolioToDisplay?.case.maquetteTextOne}
                 src={portfolioToDisplay?.case.maquetteImgOne}
+                alt={portfolioToDisplay?.case.maquetteHeadingOne}
+
             />
             <TextSection
                 title={portfolioToDisplay?.case.maquetteHeadingTwo}
                 text={portfolioToDisplay?.case.maquetteTextTwo}
                 src={portfolioToDisplay?.case.maquetteImgTwo}
+                alt={portfolioToDisplay?.case.maquetteHeadingTwo}
+
             />
             <Image
                 src={portfolioToDisplay?.case.footerImg}
