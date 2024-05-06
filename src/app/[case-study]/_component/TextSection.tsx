@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children } from 'react';
 import { Typography } from '@/app/ui/design-system/typography/typography';
 import Image from 'next/image';
 import Divider from '@/app/ui/design-system/divider/divider';

@@ -32,6 +32,29 @@ const CaseStudy = () => {
             />
 
             <TextSection
+                title="A propos du projet"
+                text={portfolioToDisplay?.case.aboutText}/>
+                <div className='grid grid-cols-1 gap-9 w-auto tablet:grid-cols-2 desktop:grid-cols-4 tablet:my-36 p-9 my-12 mx-6 tablet:mx-40'>
+
+                    <BlocColor
+                        key={portfolioToDisplay?.id}
+                        theme='primary'
+                        title={'Probleme'}
+                        content={portfolioToDisplay?.case.aboutProbleme}
+                    />
+
+                    <BlocColor
+                        key={portfolioToDisplay?.id}
+                        theme='secondary'
+                        title={'Solution'}
+                        content={portfolioToDisplay?.case.aboutSolution}
+                    />
+                </div>
+
+            
+
+
+            <TextSection
                 title="Veille Concurrentielle"
                 text={portfolioToDisplay?.case.veilleText}
                 src={portfolioToDisplay?.case.veille}
@@ -71,7 +94,7 @@ const CaseStudy = () => {
                 style={{ width: '100%', height: 'auto' }}
             />
 
-            <div className='mx-6 tablet:mx-40 bg-primary rounded-xl p-9 my-12 '>
+            <div className=' bg-primary rounded-xl p-9 my-12 mx-6 tablet:mx-40 '>
                 <Typography variant='h4' component='h4' className='text-neutral-950'>Les impacts du projet</Typography>
                 <Divider/>
                 <ul>
