@@ -6,8 +6,8 @@ import Divider from '@/app/ui/design-system/divider/divider';
 interface HeadingSectionProps {
     title?: string;
     text?: string;
-    src?: string;
-    alt?: string;
+    src: string;
+    alt: string;
 }
 
 const HeadingSection: React.FC<HeadingSectionProps> = ({ title, text, src, alt }) => (
@@ -19,7 +19,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = ({ title, text, src, alt }
             {text}
         </Typography>
 
-        {src && (
+        {src && typeof src === 'string' && ( // Vérifiez si src est défini et est une chaîne de caractères
             <Image
                 className='mt-9 mb-20 rounded-xl drop-shadow-md'
                 src={src}
