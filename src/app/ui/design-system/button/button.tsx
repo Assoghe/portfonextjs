@@ -14,7 +14,7 @@ interface Props {
     disabled?: boolean;
     isLoading?: boolean;
     children?: React.ReactNode;
-    action?: Function;
+    action?: Function | string;
     baseUrl?: string;
     linkType?: LinkType;
     className?: string;
@@ -32,7 +32,7 @@ export const Button = ({
     children,
     baseUrl,
     linkType,
-    action = () => { },
+    action = () => {},
     className,
 
 }: Props) => {
@@ -91,10 +91,12 @@ export const Button = ({
     }
 
     const handleClick = () => {
-        if (action) {
-            action()
+        if (typeof action === 'function') {
+            action(); // Si action est une fonction, l'appeler
+        } else if (typeof action === 'string') {
+            window.open(action, '_blank'); // Si action est une chaîne de caractères, l'ouvrir dans un nouvel onglet
         }
-    }
+    };
 
     const buttonContent = (
         <>
