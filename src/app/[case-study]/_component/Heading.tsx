@@ -24,7 +24,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = ({ title, text, src, alt }
             <Image
                 className='mt-9 mb-20 rounded-xl drop-shadow-md'
                 src={src}
-                alt={alt || ''}
+                alt={alt}
                 width={0}
                 height={0}
                 sizes="100vw"
