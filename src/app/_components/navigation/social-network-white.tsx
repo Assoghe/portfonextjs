@@ -3,28 +3,27 @@ import { SocialNetwork } from "./app-links";
 import { FaGithub } from "react-icons/fa";
 import clsx from "clsx";
 
-
 interface Props {
-    theme?: "neutral" | "accent";
     className?: string;
+    size?: "small" | "medium" | "large";
 }
 
-export const SocialNetworkButtonsWhite = ({ className}: Props) => {
+export const SocialNetworkButtonsWhite = ({ className, size = "medium" }: Props) => {
     const handleButtonClick = (baseUrl: string) => {
-        window.open(baseUrl, "_blank"); 
+        window.open(baseUrl, "_blank");
     };
 
-    const icoList = SocialNetwork.map((SocialNetwork) => (
+    const icoList = SocialNetwork.map((social) => (
         <Button
-            key={SocialNetwork.label}
+            key={social.label}
             variant="ico"
-            size="medium"
+            size={size} // Taille de l'icône
             icon={{
-                icon: SocialNetwork.icon ? SocialNetwork.icon : FaGithub,
+                icon: social.icon ? social.icon : FaGithub,
             }}
             iconTheme="neutral"
-            action={() => handleButtonClick(SocialNetwork.baseUrl)} 
-            linkType={SocialNetwork.type}
+            action={() => handleButtonClick(social.baseUrl)}
+            linkType={social.type}
         />
     ));
 

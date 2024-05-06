@@ -8,10 +8,6 @@ import { navLinks } from '../../constants/constants'
 import { SocialNetworkButtonsWhite } from './social-network-white'
 
 const Navbar = () => {
-  const handleSocialButtonClick = (baseUrl: string) => {
-    window.open(baseUrl, "_blank");
-  };
-
   return (
     <header className='flex items-center justify-between h-20 max-width border-b border-neutral-800 px-6 tablet:px-40 fixed top-0 left-0 right-0 w-full z-50 bg-neutral-950'>
       <Link href={"/"}>

@@ -8,6 +8,8 @@ import { PiPhone } from 'react-icons/pi'
 import { LogoComponent } from './LogoComponent';
 import { navLinks, socialLinks } from '../../constants/constants';
 import { Button } from '../../ui/design-system/button/button';
+import { SocialNetworkButtonsWhite } from './social-network-white';
+import Divider from '@/app/ui/design-system/divider/divider';
 
 
 const MobileMenu = () => {
@@ -38,7 +40,7 @@ const MobileMenu = () => {
         </div>
 
         <nav className='flex flex-col items-center justify-center flex-1 gap-10'>
-          <ul className='flex items-center flex-col gap-5'>
+          <ul className='flex items-center flex-col gap-12'>
             {
               navLinks.map((link, index) => (
                 <li key={index}>
@@ -46,19 +48,9 @@ const MobileMenu = () => {
                 </li>
               ))
             }
-            <div className='flex items-center gap-8 text-5xl mt-24'>
-              {
-                socialLinks.map((icon, index) => (
-                  <Button
-                    key={index}
-                    icon={icon}
-                    iconTheme="neutral"
-                    size="large"
-                    variant="ico"
-                  />
-                ))
-              }
-            </div>
+          <Divider/>
+
+            <SocialNetworkButtonsWhite size="large" />
           </ul>
         </nav>
       </div>
