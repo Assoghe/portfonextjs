@@ -6,7 +6,7 @@ import { HiMail } from "react-icons/hi";
 
 export const SocialNetwork: LinksSocial[] = [
     {
-        label: "Assoghe",
+        label: "Github",
         baseUrl: "https://github.com/Assoghe",
         type: "external",
         icon: FaGithub,
@@ -18,9 +18,9 @@ export const SocialNetwork: LinksSocial[] = [
         type: "external",
         icon: FaLinkedin,
     },
-     {
+    {
         label: "Soraya Gherras",
-        baseUrl: "mailto:soraya.gherras17@gmail.com", 
+        baseUrl: "mailto:soraya.gherras17@gmail.com",
         type: "external",
         icon: HiMail,
     }
