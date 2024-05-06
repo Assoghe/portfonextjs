@@ -7,8 +7,8 @@ import { StaticImport } from 'next/dist/shared/lib/get-img-props';
 interface TextImgSectionProps {
   title?: string;
   text?: string;
-  src?: string | StaticImport;
-  alt?: string | StaticImport;
+  src: string;
+  alt: string;
 }
 
 const TextImgSection: React.FC<TextImgSectionProps> = ({ title, text, src, alt }) => (
