@@ -4,7 +4,7 @@ import { Tag } from "@/app/ui/tag/tag";
 
 export const HeroTopView = () => {
     return (
-        <Container className="my-72">
+        <Container className="px-6 tablet:px-44 mt-56">
             <Typography variant="h1" component="h1" className="my-14">
             Je suis une UX et Ui designer qui explore l’intégration pour créer des interfaces réalistes.
             </Typography>

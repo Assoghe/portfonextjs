@@ -13,7 +13,7 @@ interface InfoSectionProps {
 }
 
 const InfoSection: React.FC<InfoSectionProps> = ({ client, nameClient, nameTool, tool, nameRole, role }) => (
-    <div className='px-6 tablet:px-40'>
+    <div className='px-6 tablet:px-44'>
         <div className=' tablet:flex tablet:justify-between'>
         <div>
             <Typography variant='h6' component='h6' className='text-neutral-300'>
