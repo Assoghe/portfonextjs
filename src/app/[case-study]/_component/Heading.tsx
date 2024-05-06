@@ -11,7 +11,7 @@ interface HeadingSectionProps {
 }
 
 const HeadingSection: React.FC<HeadingSectionProps> = ({ title, text, src, alt }) => (
-    <div className='px-6 tablet:px-40 mt-56'>
+    <div className='px-6 tablet:px-44 mt-56'>
        <Typography variant='h1' component='h1'>
             {title}
        </Typography>

@@ -15,7 +15,7 @@ export default function Daily() {
                         text={dailyItem.description}
                         src={dailyItem.image}
                     />
-                    <div className='grid tablet:grid-cols-3 grid-cols-1 gap-9 px-6 tablet:px-40'>
+                    <div className='grid tablet:grid-cols-3 grid-cols-1 gap-9 px-6 tablet:px-44'>
                         {dailyItem.dailyCases.map((dailyCase, subIndex) => (
                             <div key={subIndex}>
                                 <Image
