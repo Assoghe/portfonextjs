@@ -54,12 +54,12 @@ export const portfolioData = [
   {
     name: "Mangas'Fan",
     description: "Site d'actualité mangas et animés",
-    image: "/assets/img/mangasfan.webp",
+    image: "/assets/img/mangasfan.png",
     id: 1,
     case: {
       descriptionName: "Mangas'Fan",
       descriptionText: "Site d'actualité mangas et animés",
-      descriptionImageCover: "/assets/img/mangafanui.png",
+      descriptionImageCover: "/assets/img/mangasfan.png",
       infoClient: "Mangas'Fan",
       infoLiens: "Figma",
       infoRole: "UX Designer UI designer",

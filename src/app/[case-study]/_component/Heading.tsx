@@ -21,14 +21,17 @@ const HeadingSection: React.FC<HeadingSectionProps> = ({ title, text, src, alt }
 
         {src && typeof src === 'string' && ( // Vérifiez si src est défini et est une chaîne de caractères
             <Image
-                className='mt-9 mb-20 rounded-xl drop-shadow-md'
+                className='rounded-xl drop-shadow-md object-cover w-auto h-[500px] tablet:w-full mb-9'
                 src={src}
                 alt={alt}
                 width={0}
                 height={0}
-                sizes="100vw"
-                style={{ width: '100%', height: 'auto' }}
+                sizes="100vh"
+                objectFit="cover"
+                objectPosition="center"
             />
+
+         
         )}
 
     </div>

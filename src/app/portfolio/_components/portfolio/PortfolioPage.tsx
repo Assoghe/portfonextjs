@@ -11,13 +11,16 @@ export default function PortfolioSection() {
         return (
             <div className='mb-8 tablet:mb-56'>
                 <Link href={name}>
-                    <Image className='rounded-xl drop-shadow-md'
+                    <Image
+                        className='rounded-xl drop-shadow-md object-cover w-auto h-[500px] tablet:w-full'
                         src={image}
                         alt={name}
                         width={0}
                         height={0}
-                        sizes="100vw"
-                        style={{ width: '100%', height: 'auto' }}
+                        sizes="100vh"
+                        objectFit="cover"
+                        objectPosition="center"
+
                     />
                     <div className='my-4 gap-2 tablet:flex tablet:justify-between tablet:items-center'>
                         <div>

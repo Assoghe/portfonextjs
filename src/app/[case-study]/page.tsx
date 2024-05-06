@@ -96,13 +96,12 @@ const CaseStudy = () => {
                 alt={portfolioToDisplay?.case.maquetteHeadingTwo}
 
             />
-            <Image
+            <Image className='object-cover w-auto h-[900px] tablet:w-full tablet:h-full'
                 src={portfolioToDisplay?.case.footerImg}
                 alt={portfolioToDisplay?.case.descriptionName}
                 width={0}
                 height={0}
                 sizes="100vw"
-                style={{ width: '100%', height: 'auto' }}
             />
 
             <div className=' bg-primary rounded-xl p-9 my-12 mx-6 tablet:mx-40 '>
