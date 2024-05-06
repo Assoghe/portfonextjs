@@ -6,7 +6,7 @@ import Divider from '@/app/ui/design-system/divider/divider';
 interface HeadingSectionProps {
     title?: string;
     text?: string;
-    src?: string;
+    src: string;
     alt?: string;
 }
 
