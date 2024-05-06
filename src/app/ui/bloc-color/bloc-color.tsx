@@ -22,11 +22,11 @@ export const BlocColor = ({
 
     switch (theme) {
         case "primary":
-        themeStyle = "bg-primary rounded-xl p-9";
+        themeStyle = "bg-primary rounded-xl p-5 tablet:p-9";
         break;
 
         case "secondary":
-        themeStyle = "bg-secondary rounded-xl p-9";
+        themeStyle = "bg-secondary rounded-xl p-5 tablet:p-9";
         break;
     }
 

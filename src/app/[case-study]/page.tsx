@@ -34,7 +34,7 @@ const CaseStudy = () => {
             <TextSection
                 title="A propos du projet"
                 text={portfolioToDisplay?.case.aboutText}/>
-                <div className='grid grid-cols-1 gap-9 w-auto tablet:grid-cols-2 desktop:grid-cols-4 tablet:my-36 p-9 my-12 mx-6 tablet:mx-40'>
+            <div className='grid grid-cols-1 gap-9 w-auto tablet:grid-cols-2 px-6 tablet:px-40 my-24'>
 
                     <BlocColor
                         key={portfolioToDisplay?.id}
