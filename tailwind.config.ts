@@ -25,7 +25,7 @@ const config: Config = {
       'base': ['0.85rem', {
         lineHeight: '1.5rem',
         letterSpacing: '0.03375rem',
-        fontWeight: '400',
+        fontWeight: '300',
       }],
       'lg': ['0.93rem', {
         lineHeight: '1.3rem',
