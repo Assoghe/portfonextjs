@@ -14,7 +14,7 @@ const config: Config = {
       'xs': ['0.7rem', {
         lineHeight: '0.9rem',
         letterSpacing: '0.03375rem',
-        fontWeight: '300',
+        fontWeight: '400',
       }],
       'sm': ['0.9375rem', {
         lineHeight: '1.4rem',
@@ -32,7 +32,7 @@ const config: Config = {
         fontWeight: '400',
       }],
       'xl': ['0.9375rem', {
-        lineHeight: '1.3em',
+        lineHeight: '1.1em',
         letterSpacing: '0.075rem',
         fontWeight: '400',
       }],
@@ -42,7 +42,7 @@ const config: Config = {
         fontWeight: '400',
       }],
       '3xl': ['1.3125rem', {
-        lineHeight: '2.4rem',
+        lineHeight: '2rem',
         letterSpacing: '0.105rem',
         fontWeight: '400',
       }],

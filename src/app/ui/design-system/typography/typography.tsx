@@ -23,7 +23,7 @@ export const Typography = ({
 
     switch (variant) {
         case "h1": 
-        variantStyles = "text-4xl tablet:text-5xl";
+        variantStyles = "text-[24px] tablet:text-5xl";
         break;
 
         case "h2": 
