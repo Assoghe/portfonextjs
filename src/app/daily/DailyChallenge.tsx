@@ -10,9 +10,9 @@ export const DailyChallenge = () => {
             <Link href="/daily" className='text-primary'>
                 {
                     dailyData.map((daily) => (
-                        <div className="my-24 tablet:mb-56'" key={daily.name}>
+                        <div className="my-24 tablet:mb-56" key={daily.name}>
                             <div>
-                                <Image className='rounded-xl drop-shadow-md object-cover w-auto h-[75vh] tablet:h-auto tablet:w-full'
+                                <Image className='rounded-xl drop-shadow-md object-cover w-auto h-[500px] tablet:h-auto tablet:w-full'
                                     src={daily.image}
                                     alt={daily.name}
                                     width={0}
@@ -22,10 +22,10 @@ export const DailyChallenge = () => {
                                     objectPosition="center"
                                 />
                             </div>
-                            <div className="my-4 tablet:gap-2 tablet:flex tablet:justify-between tablet:items-center">
+                            <div className='my-4 tablet:gap-2 tablet:flex tablet:justify-between tablet:items-center'>
                                 <div>
                                     <Typography variant='h2' component='h2' className='mb-1'>{daily.name}</Typography>
-                                    <Typography variant="body-one" component='p' className='text-neutral-30 0 mb-6'>{daily.description}</Typography>
+                                    <Typography variant="body-one" component='p' className='text-neutral-300 mb-6'>{daily.description}</Typography>
                                 </div>
                                 <Typography variant='h4' component='h4' className='text-primary'>
                                     Voir l'étude de cas

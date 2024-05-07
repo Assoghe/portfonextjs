@@ -31,7 +31,7 @@ export const Tag = ({
 
     return (
         <div className={clsx(variantStyle)}>
-            <Typography variant='h5' component='p' className='text-base tablet:text-lg'> {children} </Typography>
+            <Typography variant='body-one' component='p'>{children} </Typography>
         </div>
     )
 }

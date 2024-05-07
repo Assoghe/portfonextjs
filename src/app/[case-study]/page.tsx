@@ -96,7 +96,7 @@ const CaseStudy = () => {
                 alt={portfolioToDisplay?.case.maquetteHeadingTwo}
 
             />
-            <Image className='object-cover w-auto h-[900px] tablet:w-full tablet:h-full'
+            <Image className='object-cover w-auto h-[900px] tablet:w-full tablet:h-full mb-24'
                 src={portfolioToDisplay?.case.footerImg}
                 alt={portfolioToDisplay?.case.descriptionName}
                 width={0}
@@ -104,12 +104,12 @@ const CaseStudy = () => {
                 sizes="100vw"
             />
 
-            <div className=' bg-primary rounded-xl p-9 my-12 mx-6 tablet:mx-40 '>
-                <Typography variant='h4' component='h4' className='text-neutral-950'>Les impacts du projet</Typography>
+            <div className=' bg-primary rounded-xl p-5 mx-6 tablet:mx-44 '>
+                <Typography variant='h4' component='h4' className='text-neutral-950 mb-4'>Les impacts du projet</Typography>
                 <Divider/>
                 <ul>
                     {portfolioToDisplay?.case.conclusionText.split('-').map((item: string, index: React.Key | null | undefined) => (
-                        <div className='mt-4 text-neutral-950 text-lg w-full' key={index}><li> - {item.trim()}</li> <br /></div>
+                        <div className='mt-4 text-neutral-950 text-xs' key={index}><li> - {item.trim()}</li> <br /></div>
                     ))}
                 </ul>
             </div>
