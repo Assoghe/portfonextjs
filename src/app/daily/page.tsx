@@ -7,7 +7,7 @@ import HeadingSection from '../[case-study]/_component/Heading';
 
 export default function Daily() {
     return (
-        <div>
+        <div className='mb-52'>
             {dailyData.map((dailyItem, index) => (
                 <div key={index}>
                     <HeadingSection
@@ -28,7 +28,7 @@ export default function Daily() {
                                     sizes="100vw"
                                     style={{ width: '100%', height: 'auto' }}
                                 />
-                                <Typography variant='h4' component='h4'>
+                                <Typography variant='h4' component='h4' className='mt-2 mb-1'>
                                     {dailyCase.dailyNumber}
                                 </Typography>
                                 <Typography variant="body-one" component='p' className='text-neutral-300'>
