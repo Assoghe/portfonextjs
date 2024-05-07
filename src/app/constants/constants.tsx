@@ -715,3 +715,4 @@ export const devTools = [
     label: "Tailwind - Débute",
   }
 ]
+

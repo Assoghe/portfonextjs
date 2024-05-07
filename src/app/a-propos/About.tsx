@@ -14,7 +14,13 @@ const About = () => {
         </Typography>
         <Divider />
         <Typography variant='body-one' component='p' className='my-8 text-neutral-200'>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus placeat rerum vitae neque       necessitatibus illum eos molestias, deserunt, similique quod voluptate laudantium, perspiciatis esse saepe dignissimos nemo quibusdam perferendis officiis! Ducimus possimus nostrum pariatur eveniet ab. Hic sit suscipit quod enim ea odio dolores rem ad ab architecto ducimus fuga eum asperiores consequuntur, beatae autem laborum laboriosam aliquam fugit numquam.
+          Je suis Soraya, une designer passionnée et étudiante en deuxième année de mastère en design digital. Actuellement, je suis alternante en tant qu'UX et UI Designer pour une société éditrice et revendeuse de logiciels. 
+
+          Dans ce portfolio, je partage avec vous mes projets les plus significatifs, mettant en lumière mon approche créative, mes compétences en conception d'interfaces et mes connaissances en développement web front-end. Chaque projet est le fruit d'une réflexion approfondie sur les besoins des utilisateurs, combinée à une recherche constante d'esthétisme et d'efficacité.
+
+          Je suis convaincue que le design est bien plus qu'une simple esthétique ; c'est un moyen puissant de résoudre des problèmes, d'améliorer des expériences et d'inspirer les utilisateurs. À travers mon portfolio, j'espère vous démontrer ma capacité à allier créativité, rigueur et expertise technique pour créer des solutions innovantes et impactantes.
+
+          Je vous invite à explorer mes réalisations et à découvrir mon approche du design. N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.
         </Typography>
 
         <Divider />
@@ -31,7 +37,7 @@ const About = () => {
           Design
         </Typography>
 
-        <div className='grid grid-cols-3 :tablet:grid-cols-7 text-5xl text-neutral-100 gap-3 mb-6'>
+        <div className='grid grid-cols-2 tablet:grid-cols-7 text-5xl text-neutral-100 mb-6'>
           {aboutTools.map((tool, index) => (
             <IconWithLabel key={index} icon={tool.icon} label={tool.label} />
           ))}
@@ -39,7 +45,7 @@ const About = () => {
         <Typography variant='h4' component='h4' className='mb-9 text-neutral-200'>
           Développement
         </Typography>
-        <div className='grid grid-cols-3 :tablet:grid-cols-7 text-5xl text-neutral-100 gap-3'>
+        <div className='grid grid-cols-2 tablet:grid-cols-7 text-5xl text-neutral-100'>
           {devTools.map((tool, index) => (
             <IconWithLabel key={index} icon={tool.icon} label={tool.label} />
           ))}
