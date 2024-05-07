@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from "clsx";
 import { IconProps } from "../../types/iconProps";
+import { Typography } from '../design-system/typography/typography';
 
 interface Props {
     variant?: "default" | "outline";
@@ -20,17 +21,17 @@ export const Tag = ({
 
     switch (variant) {
         case "default":
-            variantStyle = "w-fit px-6 py-3 text-neutral-300 text-neutral-50 bg-neutral-800 rounded-full";
+            variantStyle = "w-fit  px-4 py-3 tablet:px-6 text-neutral-50 bg-neutral-800 rounded-full";
             break;
 
         case "outline":
-            variantStyle = "w-fit px-6 py-3 text-neutral-100 border border-neutral-500 rounded rounded-full";
+            variantStyle = "w-fit px-4 py-3 tablet:px-6 text-neutral-100 border border-neutral-500 rounded rounded-full";
             break; 
     }
 
     return (
         <div className={clsx(variantStyle)}>
-            {children}
+            <Typography variant='h5' component='p'> {children} </Typography>
         </div>
     )
 }

@@ -11,6 +11,11 @@ const config: Config = {
       desktop: "1620px",
     },
     fontSize: {
+      'xs': ['0.7rem', {
+        lineHeight: '0.9rem',
+        letterSpacing: '0.03375rem',
+        fontWeight: '300',
+      }],
       'sm': ['0.9375rem', {
         lineHeight: '1.4rem',
         letterSpacing: '0.02813rem',
