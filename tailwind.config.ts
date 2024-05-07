@@ -11,7 +11,14 @@ const config: Config = {
       desktop: "1620px",
     },
     fontSize: {
-      'sm': ['0.9375rem', {
+
+      'xs': ['0.7rem', {
+        lineHeight: '0.9rem',
+        letterSpacing: '0.02813rem',
+        fontWeight: '300',
+      }],
+
+      'sm': ['0.85rem', {
         lineHeight: '1.4rem',
         letterSpacing: '0.02813rem',
         fontWeight: '300',
@@ -46,7 +53,7 @@ const config: Config = {
         letterSpacing: '0.18rem',
         fontWeight: '400',
       }],
-      '5xl': ['2.3rem', {
+      '5xl': ['2.1rem', {
         lineHeight: '3.5rem',
         letterSpacing: '0.1rem',
         fontWeight: '400',

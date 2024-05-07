@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from "clsx";
 import { IconProps } from "../../types/iconProps";
+import { Typography } from '../design-system/typography/typography';
 
 interface Props {
     variant?: "default" | "outline";
@@ -30,7 +31,7 @@ export const Tag = ({
 
     return (
         <div className={clsx(variantStyle)}>
-            {children}
+            <Typography variant='body-one' component='p'>{children} </Typography>
         </div>
     )
 }

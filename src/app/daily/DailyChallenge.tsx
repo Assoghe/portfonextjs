@@ -10,21 +10,22 @@ export const DailyChallenge = () => {
             <Link href="/daily" className='text-primary'>
                 {
                     dailyData.map((daily) => (
-                        <div className="mb-56" key={daily.name}>
+                        <div className="my-24 tablet:mb-56" key={daily.name}>
                             <div>
-                                <Image className='rounded-xl drop-shadow-md'
+                                <Image className='rounded-xl drop-shadow-md object-cover w-auto h-[500px] tablet:h-auto tablet:w-full'
                                     src={daily.image}
                                     alt={daily.name}
                                     width={0}
                                     height={0}
-                                    sizes="100vw"
-                                    style={{ width: '100%', height: 'auto' }}
+                                    sizes="100vh"
+                                    objectFit="cover"
+                                    objectPosition="center"
                                 />
                             </div>
-                            <div className="my-4 gap-2 tablet:flex tablet:justify-between tablet:items-center">
+                            <div className='my-4 tablet:gap-2 tablet:flex tablet:justify-between tablet:items-center'>
                                 <div>
-                                    <Typography variant='h2' component='h2'>{daily.name}</Typography>
-                                    <Typography variant="body-one" component='p' className='text-neutral-300'>{daily.description}</Typography>
+                                    <Typography variant='h2' component='h2' className='mb-1'>{daily.name}</Typography>
+                                    <Typography variant="body-one" component='p' className='text-neutral-300 mb-6'>{daily.description}</Typography>
                                 </div>
                                 <Typography variant='h4' component='h4' className='text-primary'>
                                     Voir l'étude de cas
