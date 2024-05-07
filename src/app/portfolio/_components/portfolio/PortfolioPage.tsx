@@ -12,7 +12,7 @@ export default function PortfolioSection() {
             <div className='my-24 tablet:mb-56'>
                 <Link href={name}>
                     <Image
-                        className='rounded-xl drop-shadow-md object-cover w-auto h-[500px] tablet:w-full'
+                        className='rounded-xl drop-shadow-md object-cover w-auto h-[75vh] tablet:h-auto tablet:w-full'
                         src={image}
                         alt={name}
                         width={0}
