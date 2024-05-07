@@ -8,13 +8,13 @@ export default function ServicesSection() {
   return (
     <>
     <div className='mt-9'>  
-      <Typography variant='h2' component='h2' className='my-9'>
+      <Typography variant='h2' component='h2' className='my-3 tablet:my-9'>
         Mes services
       </Typography>
-      <Typography variant='h3' component='h3' className='text-neutral-500 mb-6'>
+      <Typography variant='h3' component='h3' className='text-neutral-500 mb-3 tablet:mb-6'>
         Soft skills
       </Typography>
-      <div className='flex flex-wrap gap-6 mb-9' >
+      <div className='flex flex-wrap gap-3 tablet:gap-6 mb-9' >
         <Tag variant="outline"> Curiosite</Tag>
         <Tag variant="outline"> Ecoute </Tag>
           <Tag variant="outline"> Autonomie </Tag>

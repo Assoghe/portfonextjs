@@ -30,7 +30,7 @@ const MobileMenu = () => {
 
       <div className={`w-full h-full flex flex-col text-neutral-950 bg-neutral-950 fixed top-0 left-0 z-50 transition-all duration-300 ease-in-out transform  px-12 ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
 
-        <div className='flex w-full items-center justify-between h-20 max-width border-b bg-neutral-950'>
+        <div className='flex w-full items-center justify-between h-19 max-width border-b bg-neutral-950'>
           <Link href={"/"}>
             <LogoComponent size='little' />
           </Link>
