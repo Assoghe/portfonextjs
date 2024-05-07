@@ -4,31 +4,24 @@ import ServicesSection from '../portfolio/_components/portfolio/ServiceSection';
 import Divider from '../ui/design-system/divider/divider';
 import { aboutTools, devTools } from '../constants/constants';
 import IconWithLabel from '../_components/iconComponent/iconComponent';
+import TextImgSection from '../[case-study]/_component/TextSection';
 
 const About = () => {
   return (
     <>
-      <div className='mb-40'>
+      <div className='mb-40 px-6 tablet:px-44 mt-72'>
         <Typography variant='h1' component='h1' className='mb-8'>
-          Soraya Gherras
-        </Typography>
+Une designer passionnée et curieuse
+</Typography>
         <Divider />
-        <Typography variant='body-one' component='p' className='my-8 text-neutral-200'>
-          Je suis Soraya, une designer passionnée et étudiante en deuxième année de mastère en design digital. Actuellement, je suis alternante en tant qu'UX et UI Designer pour une société éditrice et revendeuse de logiciels. 
-
-          Dans ce portfolio, je partage avec vous mes projets les plus significatifs, mettant en lumière mon approche créative, mes compétences en conception d'interfaces et mes connaissances en développement web front-end. Chaque projet est le fruit d'une réflexion approfondie sur les besoins des utilisateurs, combinée à une recherche constante d'esthétisme et d'efficacité.
-
-          Je suis convaincue que le design est bien plus qu'une simple esthétique ; c'est un moyen puissant de résoudre des problèmes, d'améliorer des expériences et d'inspirer les utilisateurs. À travers mon portfolio, j'espère vous démontrer ma capacité à allier créativité, rigueur et expertise technique pour créer des solutions innovantes et impactantes.
-
-          Je vous invite à explorer mes réalisations et à découvrir mon approche du design. N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.
-        </Typography>
-
-        <Divider />
-      </div>
-
+        </div>
+        <TextImgSection
+          title="Qui je suis ?"
+        text="Je suis Soraya, une designer passionnée et étudiante en deuxième année de mastère en design digital. Actuellement, je suis en alternance en tant qu'UX et UI Designer pour une société éditrice et revendeuse de logiciels. Je suis passionnée par le design et j'aime expérimenter et tester de nouveaux outils dans le but de continuer à évoluer dans un domaine qui me passionne énormément. Mon parcours professionnel et scolaire m'a permis d'explorer les différentes facettes du design. Parallèlement à mes études, je me forme également en développement web. Cette démarche vise à approfondir ma compréhension des enjeux techniques associés au développement.
+         "
+        />
       
-
-      <div className='my-24'>
+      <div className='my-24 mb-40 px-6 tablet:px-44 '>
         <Typography variant='h2' component='h2' className='mb-12'>
           Mes outils utilisés
         </Typography>
@@ -50,10 +43,13 @@ const About = () => {
             <IconWithLabel key={index} icon={tool.icon} label={tool.label} />
           ))}
         </div>
+        <div className='my-24'>
+          <Divider />
+        </div>
+      <ServicesSection />
       </div>
 
 
-      <ServicesSection />
     </>
   );
 };
