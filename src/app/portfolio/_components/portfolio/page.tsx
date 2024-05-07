@@ -7,7 +7,7 @@ import { DailyChallenge } from "@/app/daily/DailyChallenge";
 
 function PortfolioPage() {
   return (
-    <div className="px-8 tablet:px-44">
+    <div className="px-6 tablet:px-44">
       <HeroTopView/>
       <DailyChallenge />
       <PortfolioSection/>
