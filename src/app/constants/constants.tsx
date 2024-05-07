@@ -124,7 +124,7 @@ export const portfolioData = [
   {
     name: "GoodFamily",
     id: 3,
-    description: "Application de gestion de budget familiale en utilisant la gamification",
+    description: "Application de gestion de budget familiale gamifié",
     image: "/assets/img/goodfamily.webp",
     case: {
       descriptionName: "Good Family",

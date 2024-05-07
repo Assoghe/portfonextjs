@@ -10,7 +10,7 @@ export const Logo = ({size = "medium"}: Props) => {
 
     switch (size) {
         case "little":
-        sizeLogo = 53;
+        sizeLogo = 36;
         break;
 
         case "medium":

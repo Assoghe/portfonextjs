@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 
 interface Props {
-    variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body-one" | "body-two";
+    variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "body-one" | "body-two" | "body-three";
     component?: "h1" | "h2"| "h3" | "h4" | "h5" | "h6" | "p" | "span" | "div"; 
     theme?: "neutral" | "primary";
     weight?: "light" | "regular"| "medium" | "semi-bold"| "bold";
@@ -23,7 +23,7 @@ export const Typography = ({
 
     switch (variant) {
         case "h1": 
-        variantStyles = "text-4xl tablet:text-5xl";
+        variantStyles = "text-[24px] tablet:text-5xl";
         break;
 
         case "h2": 
@@ -53,6 +53,10 @@ export const Typography = ({
         case "body-two": 
         variantStyles = "text-sm";
         break;
+
+        case "body-three":
+            variantStyles = "text-xs";
+            break;
     }
 
     switch (theme) {

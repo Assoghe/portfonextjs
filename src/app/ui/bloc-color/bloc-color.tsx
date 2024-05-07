@@ -33,13 +33,13 @@ export const BlocColor = ({
     return (
         <div className={clsx(themeStyle)} key={key}>
             {title && (
-                <Typography variant='h4' component='h4' className='text-neutral-950 mb-4'>
+                <Typography variant='h4' component='h4' className='text-neutral-950 mb-4 text-xl'>
                     {title}
                 </Typography>
             )}
             <Divider/>
             {content && (
-                <Typography variant='body-one' component='p' className='mt-4 text-neutral-950'>
+                <Typography variant='body-one' component='p' className='mt-4 text-sm text-neutral-950'>
                     {content}
                 </Typography>
             )}
