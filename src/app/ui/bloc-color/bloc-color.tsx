@@ -17,17 +17,17 @@ export const BlocColor = ({
     content,
     title,
     key,
-}:Props) => {
-    let themeStyle: string = ""; 
+}: Props) => {
+    let themeStyle: string = "";
 
     switch (theme) {
         case "primary":
-        themeStyle = "bg-primary rounded-xl p-5 tablet:p-9";
-        break;
+            themeStyle = "bg-primary rounded-xl p-5 tablet:p-9";
+            break;
 
         case "secondary":
-        themeStyle = "bg-secondary rounded-xl p-5 tablet:p-9";
-        break;
+            themeStyle = "bg-secondary rounded-xl p-5 tablet:p-9";
+            break;
     }
 
     return (
@@ -37,7 +37,7 @@ export const BlocColor = ({
                     {title}
                 </Typography>
             )}
-            <Divider/>
+            <Divider />
             {content && (
                 <Typography variant='body-one' component='p' className='mt-4 text-neutral-950'>
                     {content}
