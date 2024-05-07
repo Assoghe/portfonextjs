@@ -16,15 +16,15 @@ const config: Config = {
         letterSpacing: '0.03375rem',
         fontWeight: '400',
       }],
-      'sm': ['0.9375rem', {
+      'sm': ['0.8rem', {
         lineHeight: '1.4rem',
         letterSpacing: '0.02813rem',
         fontWeight: '300',
       }],
-      'base': ['0.9rem', {
+      'base': ['0.85rem', {
         lineHeight: '1.5rem',
         letterSpacing: '0.03375rem',
-        fontWeight: '300',
+        fontWeight: '400',
       }],
       'lg': ['0.93rem', {
         lineHeight: '1.3rem',
@@ -42,11 +42,11 @@ const config: Config = {
         fontWeight: '400',
       }],
       '3xl': ['1.3125rem', {
-        lineHeight: '2rem',
+        lineHeight: '1.6rem',
         letterSpacing: '0.105rem',
         fontWeight: '400',
       }],
-      '4xl': ['1.8rem', {
+      '4xl': ['1.9rem', {
         lineHeight: '3rem',
         letterSpacing: '0.18rem',
         fontWeight: '400',
