@@ -6,7 +6,7 @@ export const HeroTopView = () => {
     return (
         <Container className="my-52">
             <Typography variant="h1" component="h1" className="my-14 mb-9">
-            Je suis une UX et Ui designer qui explore l’intégration pour créer des interfaces réalistes.
+            Je suis une UX et Ui designer qui explore l’intégration web pour créer des interfaces réalistes.
             </Typography>
             <Tag variant="default">
                 Disponible à partir d'octobre 2024
