@@ -54,12 +54,12 @@ export const portfolioData = [
   {
     name: "Mangas'Fan",
     description: "Site d'actualité mangas et animés",
-    image: "/assets/img/mangasfan.png",
+    image: "/assets/img/mangafan.png",
     id: 1,
     case: {
       descriptionName: "Mangas'Fan",
       descriptionText: "Site d'actualité mangas et animés",
-      descriptionImageCover: "/assets/img/mangasfan.png",
+      descriptionImageCover: "/assets/img/mangafan.png",
       infoClient: "Mangas'Fan",
       infoLiens: "Figma",
       infoRole: "UX Designer UI designer",
@@ -89,12 +89,12 @@ export const portfolioData = [
   {
     name: "Tattoomorrow",
     description: "Application de gestion pour les tatoueurs",
-    image: "/assets/img/tattoomorrow.webp",
+    image: "/assets/img/tattoomorrow.png",
     id: 2,
     case: {
       descriptionName: "Tattoomorrow",
       description: "Application de gestion pour les tatoueurs",
-      descriptionImageCover: "/assets/img/tattoomorrow.webp",
+      descriptionImageCover: "/assets/img/tattoomorrow.png",
       infoClient: "MedMax",
       infoLiens: "Adobe XD",
       infoRole: "UX Designer, UI designer",
@@ -125,11 +125,11 @@ export const portfolioData = [
     name: "GoodFamily",
     id: 3,
     description: "Application de gestion de budget familiale gamifié",
-    image: "/assets/img/goodfamily.webp",
+    image: "/assets/img/goodfamily.png",
     case: {
       descriptionName: "Good Family",
       descriptionText: "Application de gestion de budget familiale en utilisant la gamification",
-      descriptionImageCover: "/assets/img/goodfamily.webp",
+      descriptionImageCover: "/assets/img/goodfamily.png",
       infoClient: "Projet d'école",
       infoLiens: "Figma",
       infoRole: "UX Designer UI designer",
@@ -162,7 +162,7 @@ export const dailyData = [
   {
     name: "Daily Ui Challenge",
     description: "Challenge journaliere sur l'UI design",
-    image: "/assets/img/dailychallengeui.png",
+    image: "/assets/img/dailyuichallenge.png",
     dailyCases: [
 
       {

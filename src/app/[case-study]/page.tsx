@@ -39,14 +39,14 @@ const CaseStudy = () => {
 
                     <BlocColor
                         key={portfolioToDisplay?.id}
-                        theme='primary'
+                        theme='one'
                         title={'Probleme'}
                         content={portfolioToDisplay?.case.aboutProbleme}
                     />
 
                     <BlocColor
                         key={portfolioToDisplay?.id}
-                        theme='secondary'
+                        theme='two'
                         title={'Solution'}
                         content={portfolioToDisplay?.case.aboutSolution}
                     />
