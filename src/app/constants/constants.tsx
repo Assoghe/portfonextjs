@@ -685,6 +685,15 @@ export const aboutTools = [
   }
 ]
 
+export const aboutData = [
+  {
+    heading: "Une designer passionnée et curieuse",
+    subtitle: "Je suis Soraya, une designer passionnée et étudiante en deuxième année de mastère en design digital. Actuellement, je suis en alternance en tant qu'UX et UI Designer pour une société éditrice et revendeuse de logiciels. Je suis passionnée par le design et j'aime expérimenter et tester de nouveaux outils dans le but de continuer à évoluer dans un domaine qui me passionne énormément. Mon parcours professionnel et scolaire m'a permis d'explorer les différentes facettes du design. Parallèlement à mes études, je me forme également en développement web. Cette démarche vise à approfondir ma compréhension des enjeux techniques associés au développement.",
+    image: "/assets/img/about/about.png",
+    textAbout: "Je suis Soraya, une designer passionnée et étudiante en deuxième année de mastère en design digital. Actuellement, je suis en alternance en tant qu'UX et UI Designer pour une société éditrice et revendeuse de logiciels. Je suis passionnée par le design et j'aime expérimenter et tester de nouveaux outils dans le but de continuer à évoluer dans un domaine qui me passionne énormément. Mon parcours professionnel et scolaire m'a permis d'explorer les différentes facettes du design. Parallèlement à mes études, je me forme également en développement web. Cette démarche vise à approfondir ma compréhension des enjeux techniques associés au développement."
+  }
+]
+
 export const devTools = [
   {
     icon: SiHtml5,
