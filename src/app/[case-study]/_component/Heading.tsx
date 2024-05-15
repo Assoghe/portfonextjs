@@ -21,7 +21,7 @@ const HeadingSection: React.FC<HeadingSectionProps> = ({ title, text, src, alt }
 
         {src && typeof src === 'string' && (
             <Image
-                className='rounded-xl drop-shadow-md object-cover w-full tablet:w-full h-[500px] tablet:h-screen mb-9'
+                className='rounded-xl drop-shadow-md object-cover w-full h-[500px] tablet:w-full tablet:h-3/4 mb-9'
                 src={src}
                 alt={alt}
                 width={0}

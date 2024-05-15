@@ -14,15 +14,14 @@ const About = () => {
     <>
       <HeadingSection
         title={heading}
-        text={subtitle}
+        text="Sans oublier qui adore boire du café et écouter du métal..."
         src={image}
         alt="About Image"
       />
 
-      <Divider />
       <TextImgSection
         title="Qui je suis ?"
-        text="Votre texte ici..."
+        text={subtitle}
       />
 
       <div className='my-24 mb-40 px-6 tablet:px-44 '>
