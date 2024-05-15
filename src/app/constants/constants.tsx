@@ -725,3 +725,15 @@ export const devTools = [
   }
 ]
 
+export const livreBlanc = [
+  {
+    heading: "Livre Blanc",
+    subtitle: "Dans le cadre de mon mastère j'ai l'opportunité de réalisé un livre blanc",
+    image: "/assets/img/livreblanc/livre-blanc.png",
+    titleContext: "Le contexte",
+    titleContextText: "La création de sites internet est devenue essentielle pour les entreprises. Malheureusement, l'intégration de maquettes peut également présenter de nombreux défis tant pour les designers que pour les développeurs. Il est donc nécessaire pour eux de collaborer de manière transparente afin de créer des sites à la fois 'implémentables' et esthétiques, leur permettant ainsi de se démarquer de la concurrence. On remarque qu'un fossé existe souvent entre le design et son implémentation. Beaucoup d'UI designers juniors créent des maquettes qui ne sont pas facilement intégrables. Elles comportent parfois des éléments trop complexes, tels que des animations trop poussées, ce qui peut rendre leur implémentation en code difficile et peu compréhensible pour tous les navigateurs. De plus, elles ne répondent pas toujours aux normes d'accessibilité, telles que le contraste, ou de performance, mesurée par des outils tels que Lighthouse.Parallèlement, les développeurs, soumis à des contraintes de temps, ne développent pas toujours de manière 'pixel perfect'.On observe souvent des écarts entre une maquette et son implémentation, ce qui peut être frustrant pour le travail du designer.",
+    problematique: "Comment intégrer efficacement une maquette web tout en affrontant les défis liés au développement web ?",
+    notaBeneTitle: "Important: Ce livre blanc est en cours de rédaction",
+    notaBeneText: "Ce livre blanc est en cours de rédaction et sera terminé à l'été 2024. N'hésitez pas à me suivre ou à me contacter si vous êtes intéressé par ce livre blanc."
+  }
+]
