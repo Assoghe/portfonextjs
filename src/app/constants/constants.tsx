@@ -93,7 +93,7 @@ export const portfolioData = [
     id: 2,
     case: {
       descriptionName: "Tattoomorrow",
-      description: "Application de gestion pour les tatoueurs",
+      descriptionText: "Application de gestion pour les tatoueurs",
       descriptionImageCover: "/assets/img/tattoomorrow.png",
       infoClient: "MedMax",
       infoLiens: "Adobe XD",

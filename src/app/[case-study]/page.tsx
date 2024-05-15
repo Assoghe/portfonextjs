@@ -105,11 +105,11 @@ const CaseStudy = () => {
             />
 
             <div className=' bg-primary rounded-xl p-5 mx-6 tablet:mx-44 '>
-                <Typography variant='h4' component='h4' className='text-neutral-950 mb-4'>Les impacts du projet</Typography>
+                <Typography variant='h4' component='h4' className='text-neutral-950 mb-6'>Les impacts du projet</Typography>
                 <Divider/>
                 <ul>
                     {portfolioToDisplay?.case.conclusionText.split('-').map((item: string, index: React.Key | null | undefined) => (
-                        <div className='mt-4 text-neutral-950 text-xs' key={index}><li> - {item.trim()}</li> <br /></div>
+                        <div className='tablet:text-base text-sm text-neutral-950 mt-2' key={index}><li> - {item.trim()}</li> <br /></div>
                     ))}
                 </ul>
             </div>
