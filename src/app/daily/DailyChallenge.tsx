@@ -12,7 +12,7 @@ export const DailyChallenge = () => {
                     dailyData.map((daily) => (
                         <div className="my-24 tablet:mb-56" key={daily.name}>
                             <div>
-                                <Image className='rounded-xl drop-shadow-md object-cover w-full tablet:w-full h-[500px] tablet:h-screen'
+                                <Image className='rounded-xl drop-shadow-md object-cover w-full h-[500px] tablet:w-full tablet:h-3/4'
                                     src={daily.image}
                                     alt={daily.name}
                                     width={0}
