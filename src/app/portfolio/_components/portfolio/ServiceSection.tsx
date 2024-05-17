@@ -22,14 +22,23 @@ export default function ServicesSection() {
       </div>
 </div>
 <div className='grid grid-cols-1 gap-4 w-auto tablet:grid-cols-2 desktop:grid-cols-4'>
-  {service.map(({ title, content}, index) => (
-    <BlocColor
-      key={index}
-      theme={index % 2 === 0 ? 'primary' : 'secondary'}
-      title={title}
-      content={content}
-    />
-  ))}
+        {service.map(({ title, content }, index) => (
+          <BlocColor
+            key={index}
+            theme={
+              index % 4 === 0
+                ? 'one'
+                : index % 4 === 1
+                  ? 'two'
+                  : index % 4 === 2
+                    ? 'three'
+                    : 'four'
+            }
+            title={title}
+            content={content}
+          />
+        ))}
+
 </div>
     </>
   )

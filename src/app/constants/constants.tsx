@@ -54,12 +54,12 @@ export const portfolioData = [
   {
     name: "Mangas'Fan",
     description: "Site d'actualité mangas et animés",
-    image: "/assets/img/mangasfan.png",
+    image: "/assets/img/mangafan.png",
     id: 1,
     case: {
       descriptionName: "Mangas'Fan",
       descriptionText: "Site d'actualité mangas et animés",
-      descriptionImageCover: "/assets/img/mangasfan.png",
+      descriptionImageCover: "/assets/img/mangafan.png",
       infoClient: "Mangas'Fan",
       infoLiens: "Figma",
       infoRole: "UX Designer UI designer",
@@ -89,12 +89,12 @@ export const portfolioData = [
   {
     name: "Tattoomorrow",
     description: "Application de gestion pour les tatoueurs",
-    image: "/assets/img/tattoomorrow.webp",
+    image: "/assets/img/tattoomorrow.png",
     id: 2,
     case: {
       descriptionName: "Tattoomorrow",
-      description: "Application de gestion pour les tatoueurs",
-      descriptionImageCover: "/assets/img/tattoomorrow.webp",
+      descriptionText: "Application de gestion pour les tatoueurs",
+      descriptionImageCover: "/assets/img/tattoomorrow.png",
       infoClient: "MedMax",
       infoLiens: "Adobe XD",
       infoRole: "UX Designer, UI designer",
@@ -125,11 +125,11 @@ export const portfolioData = [
     name: "GoodFamily",
     id: 3,
     description: "Application de gestion de budget familiale gamifié",
-    image: "/assets/img/goodfamily.webp",
+    image: "/assets/img/goodfamily.png",
     case: {
       descriptionName: "Good Family",
       descriptionText: "Application de gestion de budget familiale en utilisant la gamification",
-      descriptionImageCover: "/assets/img/goodfamily.webp",
+      descriptionImageCover: "/assets/img/goodfamily.png",
       infoClient: "Projet d'école",
       infoLiens: "Figma",
       infoRole: "UX Designer UI designer",
@@ -162,7 +162,7 @@ export const dailyData = [
   {
     name: "Daily Ui Challenge",
     description: "Challenge journaliere sur l'UI design",
-    image: "/assets/img/dailychallengeui.png",
+    image: "/assets/img/dailyuichallenge.png",
     dailyCases: [
 
       {
@@ -685,6 +685,15 @@ export const aboutTools = [
   }
 ]
 
+export const aboutData = [
+  {
+    heading: "Une designer passionnée et curieuse",
+    subtitle: "Je suis Soraya, une designer passionnée et étudiante en deuxième année de mastère en design digital. Actuellement, je suis en alternance en tant qu'UX et UI Designer pour une société éditrice et revendeuse de logiciels. Je suis passionnée par le design et j'aime expérimenter et tester de nouveaux outils dans le but de continuer à évoluer dans un domaine qui me passionne énormément. Mon parcours professionnel et scolaire m'a permis d'explorer les différentes facettes du design. Parallèlement à mes études, je me forme également en développement web. Cette démarche vise à approfondir ma compréhension des enjeux techniques associés au développement.",
+    image: "/assets/img/about/about.png",
+    textAbout: "Je suis Soraya, une designer passionnée et étudiante en deuxième année de mastère en design digital. Actuellement, je suis en alternance en tant qu'UX et UI Designer pour une société éditrice et revendeuse de logiciels. Je suis passionnée par le design et j'aime expérimenter et tester de nouveaux outils dans le but de continuer à évoluer dans un domaine qui me passionne énormément. Mon parcours professionnel et scolaire m'a permis d'explorer les différentes facettes du design. Parallèlement à mes études, je me forme également en développement web. Cette démarche vise à approfondir ma compréhension des enjeux techniques associés au développement."
+  }
+]
+
 export const devTools = [
   {
     icon: SiHtml5,
@@ -716,3 +725,15 @@ export const devTools = [
   }
 ]
 
+export const livreBlanc = [
+  {
+    heading: "Livre Blanc",
+    subtitle: "Dans le cadre de mon mastère j'ai l'opportunité de réalisé un livre blanc",
+    image: "/assets/img/livreblanc/livre-blanc.png",
+    titleContext: "Le contexte",
+    titleContextText: "La création de sites internet est devenue essentielle pour les entreprises. Malheureusement, l'intégration de maquettes peut également présenter de nombreux défis tant pour les designers que pour les développeurs. Il est donc nécessaire pour eux de collaborer de manière transparente afin de créer des sites à la fois 'implémentables' et esthétiques, leur permettant ainsi de se démarquer de la concurrence. On remarque qu'un fossé existe souvent entre le design et son implémentation. Beaucoup d'UI designers juniors créent des maquettes qui ne sont pas facilement intégrables. Elles comportent parfois des éléments trop complexes, tels que des animations trop poussées, ce qui peut rendre leur implémentation en code difficile et peu compréhensible pour tous les navigateurs. De plus, elles ne répondent pas toujours aux normes d'accessibilité, telles que le contraste, ou de performance, mesurée par des outils tels que Lighthouse.Parallèlement, les développeurs, soumis à des contraintes de temps, ne développent pas toujours de manière 'pixel perfect'.On observe souvent des écarts entre une maquette et son implémentation, ce qui peut être frustrant pour le travail du designer.",
+    problematique: "Comment intégrer efficacement une maquette web tout en affrontant les défis liés au développement web ?",
+    notaBeneTitle: "Important: Ce livre blanc est en cours de rédaction",
+    notaBeneText: "Ce livre blanc est en cours de rédaction et sera terminé à l'été 2024. N'hésitez pas à me suivre ou à me contacter si vous êtes intéressé par ce livre blanc."
+  }
+]

@@ -6,48 +6,50 @@ import Divider from '../design-system/divider/divider';
 
 interface Props {
     title?: any;
-    content?: ReactNode;
-    theme?: "primary" | "secondary";
+    content?: React.ReactNode;
+    theme?: "one" | "two" | "three" | "four";
     className?: string;
     key?: any;
 }
 
 export const BlocColor = ({
-    theme = "primary",
+    theme = 'one',
     content,
     title,
-    key,
 }: Props) => {
-    let themeStyle: string = "";
+    let themeStyle: string = '';
 
     switch (theme) {
-        case "primary":
-            themeStyle = "bg-primary rounded-xl p-5 tablet:p-9";
+        case 'one':
+            themeStyle = 'bg-[#FDA566] rounded-xl p-5 tablet:p-9';
             break;
 
-        case "secondary":
-            themeStyle = "bg-secondary rounded-xl p-5 tablet:p-9";
+        case 'two':
+            themeStyle = 'bg-[#FC9273] rounded-xl p-5 tablet:p-9';
+            break;
+
+        case 'three':
+            themeStyle = 'bg-[#F97389] rounded-xl p-5 tablet:p-9';
+            break;
+
+        case 'four':
+            themeStyle = 'bg-[#F7589C] rounded-xl p-5 tablet:p-9';
             break;
     }
 
     return (
-        <div className={clsx(themeStyle)} key={key}>
+        <div className={clsx(themeStyle)}>
             {title && (
-                <Typography variant='h4' component='h4' className='text-neutral-950 mb-4 text-xl'>
+                <Typography variant="h4" component="h4" className="text-neutral-950 mb-4 text-xl">
                     {title}
                 </Typography>
             )}
             <Divider />
             {content && (
-                <Typography variant='body-one' component='p' className='mt-4 text-sm text-neutral-950'>
+                <Typography variant="body-one" component="p" className="mt-4 text-sm text-neutral-950">
                     {content}
                 </Typography>
             )}
         </div>
-    )
-}
-
-
-
-
-
+    );
+};
