@@ -9,7 +9,7 @@ export const HeroTopView = () => {
             Je suis une UX et Ui designer qui explore l’intégration web pour créer des interfaces réalistes.
             </Typography>
             <Tag variant="default">
-                Disponible maintenant
+                Disponible immédiatement pour de nouvelles opportunités !
             </Tag>
         </Container>
     )
